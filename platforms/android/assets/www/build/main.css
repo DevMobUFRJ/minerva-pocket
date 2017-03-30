@@ -26790,6 +26790,7 @@ ion-navbar.toolbar {
     padding-top: calc(16px + 20px);
   }
 }
+<<<<<<< HEAD
 
 page-categorias .img-responsive {
   width: 110%;
@@ -26807,3 +26808,5 @@ page-categorias .ocupatudo {
 page-categorias .scroll-content {
   overflow: hidden;
 }
+=======
+>>>>>>> dev
