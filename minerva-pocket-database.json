@@ -1,5 +1,5 @@
 {
-  "data":{
+  "data": {
     "alimentacao": [
       {
         "id":1, 
@@ -21,7 +21,17 @@
         "pagamento":["dinheiro","crédito","débito"],
         "funcionamento": "seg à sexta: 10h-20h",
         "localizacao":"-22.8585071,-43.2326489"
-      },
-    ]
+      }
+    ],
+    
+    "transporte":[
+      {
+        "id":1,
+        "linha":"485",
+        "preco":"4,00",
+        "funcionamento":"6h-22h",
+        "pontos":["HU", "CT", "Letras"]
+      }
+    ]   
   }
 }
