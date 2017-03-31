@@ -30,6 +30,13 @@
         "preco":"4,00",
         "funcionamento":"6h-22h",
         "pontos":["HU", "CT", "Letras"]
+      },
+      {
+        "id":2,
+        "linha":"115C",
+        "preco":"6,05",
+        "funcionamento":"7h-22h",
+        "pontos":["HU", "CT", "Letras"]
       }
     ]   
   }
