@@ -26794,16 +26794,18 @@ ion-navbar.toolbar {
 page-categorias .img-responsive {
   width: 110%;
   margin-bottom: -4px;
-}
-
-page-categorias ion-item {
-  height: 33vh;
+  height: 28vh;
 }
 
 page-categorias .ocupatudo {
   margin-bottom: 0px;
 }
 
-page-categorias .scroll-content {
-  overflow: hidden;
+page-categorias .texto {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 30px;
+  z-index: 1;
+  color: white;
+  font-size: 20px;
 }
