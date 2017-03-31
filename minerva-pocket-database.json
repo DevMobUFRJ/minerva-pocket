@@ -3,7 +3,7 @@
           "alimentacao": [
                             {
                               "id":1, 
-                              "nome":"vermelhinho",
+                              "nome":"Vermelhinho",
                               "imagem":"",
                               "tipo_de_comida":["à kilo"],
                               "preco":["39,99/kg"],
@@ -14,7 +14,7 @@
                             },
                             {
                               "id":2, 
-                              "nome":"verdinho",
+                              "nome":"Verdinho",
                               "imagem":"",
                               "tipo_de_comida":["massas"],
                               "preco":["salgados: 4,00"],
