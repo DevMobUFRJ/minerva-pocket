@@ -1,23 +1,25 @@
-{"alimentacao": 
-		{
-			"id":1, 
-			"nome":"vermelhinho",
-			"imagem":"",
-			"tipo_de_comida":["à kilo"],
-			"preco":["39,99/kg"],
-			"pagamento":["dinheiro","crédito","débito"],
-			"funcionamento": "seg à sexta: 8h-17h",
-			"localizacao":"-22.858662,-43.232529"
+{"data":
+    "alimentacao": [
+      {
+        "id":1, 
+        "nome":"vermelhinho",
+        "imagem":"",
+        "tipo_de_comida":["à kilo"],
+        "preco":["39,99/kg"],
+        "pagamento":["dinheiro","crédito","débito"],
+        "funcionamento": "seg à sexta: 8h-17h",
+        "localizacao":"-22.858662,-43.232529"
 
-		},
-		{
-			"id":2, 
-			"nome":"verdinho",
-			"imagem":"",
-			"tipo_de_comida":["massas"],
-			"preco":["salgados: 4,00"],
-			"pagamento":["dinheiro","crédito","débito"],
-			"funcionamento": "seg à sexta: 10h-20h",
-			"localizacao":"-22.8585071,-43.2326489"
-		}
+      },
+      {
+        "id":2, 
+        "nome":"verdinho",
+        "imagem":"",
+        "tipo_de_comida":["massas"],
+        "preco":["salgados: 4,00"],
+        "pagamento":["dinheiro","crédito","débito"],
+        "funcionamento": "seg à sexta: 10h-20h",
+        "localizacao":"-22.8585071,-43.2326489"
+      },
+    ]
 }
