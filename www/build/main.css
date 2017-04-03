@@ -26809,3 +26809,7 @@ page-categorias .texto {
   color: white;
   font-size: 20px;
 }
+
+page-categorias .scroll-content {
+  margin-bottom: -7px;
+}
