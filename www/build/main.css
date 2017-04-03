@@ -26798,7 +26798,7 @@ page-categorias .img-responsive {
 }
 
 page-categorias .ocupatudo {
-  margin-bottom: 0px;
+  margin-bottom: -5px;
 }
 
 page-categorias .texto {
@@ -26811,9 +26811,14 @@ page-categorias .texto {
 }
 
 page-categorias .scroll-content {
-  margin-bottom: -7px;
+  padding-top: 1px;
+  margin-bottom: -1px;
 }
 
-page-categorias #last-img {
-  margin-top: -1px;
+page-categorias .last-img {
+  height: 30vh;
+}
+
+page-categorias ion-img.img-loaded img {
+  height: 30vh;
 }

@@ -8,7 +8,7 @@ page-categorias {
     height: 28vh;
   }
   .ocupatudo{
-    margin-bottom: 0px;
+    margin-bottom: -5px;
   }
   .texto{
     position: absolute;
@@ -20,12 +20,19 @@ page-categorias {
     //font-weight: bold;
   }
   .scroll-content{
-    margin-bottom: -7px;
+    padding-top: 1px;
+    margin-bottom: -1px;
+    // margin-bottom: -7px;
     //overflow: hidden;
   }
 
-  #last-img{
-    margin-top: -1px;
+  .last-img{
+    height: 30vh;
   }
+
+  ion-img.img-loaded img {
+    height: 30vh;
+  }
+
 
 }
