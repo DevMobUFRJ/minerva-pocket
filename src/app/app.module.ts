@@ -4,6 +4,7 @@ import { MyApp } from './app.component';
 import { CategoriasPage } from '../pages/categorias/categorias';
 import { FavoritosPage } from '../pages/favoritos/favoritos';
 import { TabsPage } from '../pages/tabs/tabs';
+import { ServicosPage } from '../pages/categorias/servicos/servicos';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -13,7 +14,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     CategoriasPage,
     FavoritosPage,
-    TabsPage
+    TabsPage,
+    ServicosPage,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -23,7 +25,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     CategoriasPage,
     FavoritosPage,
-    TabsPage
+    TabsPage,
+    ServicosPage,
   ],
   providers: [
     StatusBar,

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { FavoritosPage } from '../favoritos/favoritos';
 
 /*
   Generated class for the Todos page.
@@ -13,10 +14,13 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class CategoriasPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  favoritosPage = FavoritosPage;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CategoriasPage');
   }
-
 }
