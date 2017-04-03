@@ -26813,3 +26813,7 @@ page-categorias .texto {
 page-categorias .scroll-content {
   margin-bottom: -7px;
 }
+
+page-categorias #last-img {
+  margin-top: -1px;
+}

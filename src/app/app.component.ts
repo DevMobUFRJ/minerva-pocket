@@ -17,7 +17,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  rootPage: any = ServicosPage;
+  rootPage: any = TabsPage;
   pages: Array<{title: string, component: any}>;
 
   constructor(
@@ -31,7 +31,8 @@ export class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'Categorias', component: CategoriasPage },
-      { title: 'Favoritos', component: FavoritosPage }
+      { title: 'Favoritos', component: FavoritosPage },
+      { title: 'Servicos', component: ServicosPage },
     ];
   }
 
