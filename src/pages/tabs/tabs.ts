@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
-
 import { CategoriasPage } from '../categorias/categorias';
 import { FavoritosPage } from '../favoritos/favoritos';
-
-
 
 @Component({
   templateUrl: `tabs.html`
