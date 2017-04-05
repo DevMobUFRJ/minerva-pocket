@@ -26822,3 +26822,7 @@ page-categorias .last-img {
 page-categorias ion-img.img-loaded img {
   height: 30vh;
 }
+
+page-sevicos .img-thumb {
+  width: 100px;
+}
