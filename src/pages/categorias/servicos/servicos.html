@@ -7,11 +7,29 @@
 </ion-header>
 <ion-content>
   <ion-list>
-    <ion-item>
-      <ion-thumbnail item-right>
-        <img class="img-thumb" src="assets/images/xerox.jpg">
+    <ion-item [navPush]="xeroxPage">
+      <ion-thumbnail item-right >
+        <img class="img-thumb" src="assets/images/servicos/xerox.jpg">
       </ion-thumbnail>
-      <h1>Xerox</h1>
+      <h1>Xerox e Gráficas</h1>
+    </ion-item>
+    <ion-item [navPush]="bancosPage">
+      <ion-thumbnail item-right >
+        <img class="img-thumb" src="assets/images/servicos/banco.jpg">
+      </ion-thumbnail>
+      <h1>Bancos</h1>
+    </ion-item>
+    <ion-item [navPush]="comercioPage">
+      <ion-thumbnail item-right >
+        <img class="img-thumb" src="assets/images/servicos/comercio.jpg">
+      </ion-thumbnail>
+      <h1>Comércio</h1>
+    </ion-item>
+    <ion-item [navPush]="outrosPage">
+      <ion-thumbnail item-right >
+        <img class="img-thumb" src="assets/images/servicos/outros.jpg">
+      </ion-thumbnail>
+      <h1>Outros</h1>
     </ion-item>
   </ion-list>
 
