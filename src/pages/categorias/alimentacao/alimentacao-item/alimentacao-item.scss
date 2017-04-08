@@ -17,8 +17,24 @@ page-alimentacao-item {
   }
 
   .sombra{
+    position: relative;
+    top: 0px;
+    margin-top: -3vh;
     height:35vh;
     box-shadow: inset 0vw 10vh 30vh -40px rgba(0, 0, 0, 0.8);
   }
 
+  .titulo{
+    color: white;
+    margin-top: -6vh;
+    margin-left: 3vw;
+    font-size: 4vh;
+  }
+
+  ion-note{
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;    
+  }
 }

@@ -1,22 +1,36 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-/*
-  Generated class for the Alimentacao page.
+import {BdService} from  '../../../app/services/bd.service';
+import {AlimentacaoItemPage} from './alimentacao-item/alimentacao-item';
 
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
   selector: 'page-alimentacao',
   templateUrl: 'alimentacao.html'
 })
 export class AlimentacaoPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  items:any;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private bdService: BdService) {
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AlimentacaoPage');
   }
 
+  ngOnInit(){
+    this.getData();
+    console.log('foi...')
+  }
+
+  getData(){
+    this.bdService.getData().subscribe(response => {
+      this.items = response.data.alimentacao;
+    });
+  }
+
+  viewItem(item){
+    this.navCtrl.push(AlimentacaoItemPage, {item:item})
+  }
 }

@@ -1,0 +1,67 @@
+
+<ion-header no-border >
+
+  <ion-navbar color="transparente">
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="sombra">
+    <img alt="image" class="imagem-item" src="assets/images/alimentacao/vermelhinho.png">
+  </div>
+  <h1 class="titulo">{{item.nome}}</h1>
+  <ion-list no-padding>
+
+    <ion-item (click)="toggleDetails(tipo_de_comida)">
+      Tipo de Comida
+      <ion-note item-right>
+        {{item.tipo_de_comida}}
+      </ion-note>
+    </ion-item>
+
+    <ion-item (click)="toggleDetails(preco)">
+      Preço
+      <ion-note item-right>
+        {{item.preco}}
+      </ion-note>
+    </ion-item>
+
+    <ion-item (click)="toggleDetails(pagamento)">
+      Pagamento
+      <ion-note item-right>
+         {{item.pagamento}}
+      </ion-note>
+      </ion-item>
+
+    <ion-item ion-item (click)="toggleDetails(funcionamento)">
+      Funcionamento
+      <ion-note item-right>
+        {{item.funcionamento}}
+      </ion-note>
+    </ion-item>
+
+    <ion-item (click)="toggleDetails(pagamento)">
+      Localização
+      <div>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110.70004691867359!2d-43.23254713618146!3d-22.858640888125088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDUxJzMxLjIiUyA0M8KwMTMnNTcuMSJX!5e1!3m2!1spt-BR!2sbr!4v1491675307447" width=300px height=300px frameborder="0" style="border:0"></iframe> -->
+      </div>
+    </ion-item>
+
+    <ion-item (click)="toggleDetails(avaliacao)">
+      Avaliação
+      <div>
+        {{item.avaliacao}}
+      </div>
+    </ion-item>
+
+    <ion-item (click)="toggleDetails(comentarios)">
+      Comentários
+      <div>
+        {{item.comentarios}}
+      </div>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

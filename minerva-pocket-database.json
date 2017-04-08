@@ -2,7 +2,7 @@
   "data": {
           "alimentacao": [
                             {
-                              "id":1, 
+                              "id":1,
                               "nome":"Vermelhinho",
                               "imagem":"",
                               "tipo_de_comida":["à kilo"],
@@ -13,7 +13,7 @@
 
                             },
                             {
-                              "id":2, 
+                              "id":2,
                               "nome":"Verdinho",
                               "imagem":"",
                               "tipo_de_comida":["massas"],
@@ -23,21 +23,59 @@
                               "localizacao":"-22.8585071,-43.2326489"
                             }
           ],
-          "transporte": [
-                            {
-                              "id":1,
-                              "linha":"485",
-                              "preco":"4,00",
-                              "funcionamento":"6h-22h",
-                              "pontos":["HU", "CT", "Letras"]
-                            },
-                            {
-                              "id":2,
-                              "linha":"115C",
-                              "preco":"6,05",
-                              "funcionamento":"7h-22h",
-                              "pontos":["HU", "CT", "Letras"]
-                            }
-          ]
+          "transporte": {
+                          "externo":[
+                                        {
+                                          "id":1,
+                                          "linha":"485",
+                                          "preco":"4,00",
+                                          "funcionamento":"6h-22h",
+                                          "pontos":["HU", "CT", "Letras"]
+                                        },
+                                        {
+                                          "id":2,
+                                          "linha":"115C",
+                                          "preco":"6,05",
+                                          "funcionamento":"7h-22h",
+                                          "pontos":["HU", "CT", "Letras"]
+                                        }
+                          ]
+          },
+          "servico": {
+                          "xerox":[
+                                        {
+                                          "id":1,
+                                          "tipo":"Xerox",
+                                          "servicos":"Cópia colorida e P&B",
+                                          "preco":"0,40/página",
+                                          "funcionamento":"6h-22h",
+                                          "localizacao":"Ali perto daquele lugar"
+                                        },
+                                        {
+                                          "id":2,
+                                          "tipo":"Gráfica",
+                                          "servicos":"Cópia em P&B",
+                                          "preco":"0,30/página",
+                                          "funcionamento":"7h-22h",
+                                          "localizacao":"Ali perto daquele lugar"
+                                        }
+                          ],
+                          "bancos":[
+                                        {
+                                          "id":1,
+                                          "agencia":"Itaú",
+                                          "tipo":"Agência",
+                                          "funcionamento":"6h-22h",
+                                          "localizacao":"Ali perto daquele lugar"
+                                        },
+                                        {
+                                          "id":2,
+                                          "agencia":"Banco do Brasil",
+                                          "tipo":"Caixa Eletrônico",
+                                          "funcionamento":"7h-22h",
+                                          "localizacao":"Ali perto daquele lugar"
+                                        }
+                          ]
+          },
   }
 }

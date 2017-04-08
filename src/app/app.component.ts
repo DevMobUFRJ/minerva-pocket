@@ -12,12 +12,15 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { ServicosPage } from '../pages/categorias/servicos/servicos';
 
 import { AlimentacaoPage } from '../pages/categorias/alimentacao/alimentacao';
-import { AlimentacaoListPage } from '../pages/categorias/alimentacao/alimentacao-list/alimentacao-list';
-import { AlimentacaoItemPage } from '../pages/categorias/alimentacao/alimentacao-list/alimentacao-item/alimentacao-item';
+import { AlimentacaoItemPage } from '../pages/categorias/alimentacao/alimentacao-item/alimentacao-item';
+
+import { BdService } from './services/bd.service'
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  providers:[BdService]
 })
+
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
@@ -41,7 +44,6 @@ export class MyApp {
       { title: 'Servicos', component: ServicosPage },
 
       { title: 'Alimentacao', component: AlimentacaoPage },
-      { title: 'AlimentacaoList', component: AlimentacaoListPage },
       { title: 'AlimentacaoItem', component: AlimentacaoItemPage },
     ];
   }
@@ -61,4 +63,5 @@ export class MyApp {
     // navigate to the new page if it is not the current page
     this.nav.setRoot(page.component);
   }
+
 }

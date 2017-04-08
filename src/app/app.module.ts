@@ -8,8 +8,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { ServicosPage } from '../pages/categorias/servicos/servicos';
 
 import { AlimentacaoPage } from '../pages/categorias/alimentacao/alimentacao';
-import { AlimentacaoListPage } from '../pages/categorias/alimentacao/alimentacao-list/alimentacao-list';
-import { AlimentacaoItemPage } from '../pages/categorias/alimentacao/alimentacao-list/alimentacao-item/alimentacao-item';
+import { AlimentacaoItemPage } from '../pages/categorias/alimentacao//alimentacao-item/alimentacao-item';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -24,12 +23,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ServicosPage,
 
     AlimentacaoPage,
-    AlimentacaoListPage,
     AlimentacaoItemPage,
 
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp,{tabsPlacement: 'top',tabsHideOnSubPages: true})
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -41,7 +39,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ServicosPage,
 
     AlimentacaoPage,
-    AlimentacaoListPage,
     AlimentacaoItemPage,
 
   ],
