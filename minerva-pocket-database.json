@@ -24,6 +24,22 @@
                             }
           ],
           "transporte": {
+                          "interno":[
+                                        {
+                                          "id":1,
+                                          "linha":"Circular 2",
+                                          "funcionamento":"6h-22h",
+                                          "observacoes":"É circular",
+                                          "pontos":["HU", "CT", "Letras"]
+                                        },
+                                        {
+                                          "id":2,
+                                          "linha":"Circular 3",
+                                          "funcionamento":"7h-22h",
+                                          "observacoes":"É circular",
+                                          "pontos":["HU", "CT", "Letras"]
+                                        }
+                          ],
                           "externo":[
                                         {
                                           "id":1,
@@ -42,7 +58,7 @@
                           ]
           },
           "servico": {
-                          "xerox":[
+                          "xerox-grafica":[
                                         {
                                           "id":1,
                                           "tipo":"Xerox",
@@ -75,7 +91,105 @@
                                           "funcionamento":"7h-22h",
                                           "localizacao":"Ali perto daquele lugar"
                                         }
+                          ],
+                          "comercio":[
+                                        {
+                                          "id":1,
+                                          "tipo":"Mercado",
+                                          "nome":"Mercado do Seu Zé",
+                                          "especialidade":"Ousadias",
+                                          "funcionamento":"6h-22h",
+                                          "localizacao":"Ali perto daquele lugar"
+                                        },
+                                        {
+                                          "id":2,
+                                          "tipo":"Mercado",
+                                          "nome":"Mercado da Vila",
+                                          "especialidade":"Geral",
+                                          "funcionamento":"6h-22h",
+                                          "localizacao":"Ali perto daquele lugar"
+                                        }
+                          ],
+                          "outros":[
+                                        {
+                                          "id":1,
+                                          "servico":"Correios",
+                                          "nome":"Correios",
+                                          "observacoes":"Não é uma caixa",
+                                          "funcionamento":"6h-22h",
+                                          "localizacao":"Ali perto daquele lugar"
+                                        },
+                                        {
+                                          "id":2,
+                                          "servico":"Agência de Viagens",
+                                          "nome":"Agência de Viagens",
+                                          "observacoes":"Não vende pacote de viagens",
+                                          "funcionamento":"6h-22h",
+                                          "localizacao":"Ali perto daquele lugar"
+                                        }
                           ]
           },
+          "academico": {
+                          "bibliotecas":[
+                                        {
+                                          "id":1,
+                                          "nome":"Biblioteca Central do CCMN",
+                                          "observacoes":"Possui computadores e espaço de estudo",
+                                          "funcionamento":"6h-22h",
+                                          "localizacao":"Ali perto daquele lugar"
+                                        },
+                                        {
+                                          "id":2,
+                                          "tipo":"Biblioteca Central do IM",
+                                          "observacoes":"Possui computadores e espaço de estudo",
+                                          "funcionamento":"6h-22h",
+                                          "localizacao":"Ali perto daquele lugar"
+                                        }
+                          ],
+                          "CAs-DAs":[
+                                        {
+                                          "id":1,
+                                          "nome":"CAInfo",
+                                          "funcionamento":"6h-22h",
+                                          "localizacao":"Ali perto daquele lugar"
+                                        },
+                                        {
+                                          "id":2,
+                                          "nome":"DAEQ",
+                                          "funcionamento":"6h-22h",
+                                          "localizacao":"Ali perto daquele lugar"
+                                        }
+                          ],
+                          "auditorios":[
+                                        {
+                                          "id":1,
+                                          "nome":"Pangea",
+                                          "capacidade":"46 lugares",
+                                          "funcionamento":"6h-22h",
+                                          "localizacao":"Ali perto daquele lugar"
+                                        },
+                                        {
+                                          "id":2,
+                                          "nome":"Roxinho",
+                                          "capacidade":"500 lugares",
+                                          "funcionamento":"6h-22h",
+                                          "localizacao":"Ali perto daquele lugar"
+                                        }
+                          ],
+                          "secretarias":[
+                                        {
+                                          "id":1,
+                                          "nome":"Secretaria da Decania",
+                                          "funcionamento":"6h-22h",
+                                          "localizacao":"Ali perto daquele lugar"
+                                        },
+                                        {
+                                          "id":2,
+                                          "nome":"Secretaria do CCMN",
+                                          "funcionamento":"6h-22h",
+                                          "localizacao":"Ali perto daquele lugar"
+                                        }
+                          ]
+          }
   }
 }
