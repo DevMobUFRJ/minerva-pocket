@@ -9,7 +9,7 @@
                               "preco":["39,99/kg"],
                               "pagamento":["dinheiro","crédito","débito"],
                               "funcionamento": "seg à sexta: 8h-17h",
-                              "localizacao":"-22.858662,-43.232529"
+                              "localizacao":["-22.858662,-43.232529","CCMN"]
 
                             },
                             {
@@ -20,7 +20,7 @@
                               "preco":["salgados: 4,00"],
                               "pagamento":["dinheiro","crédito","débito"],
                               "funcionamento": "seg à sexta: 10h-20h",
-                              "localizacao":"-22.8585071,-43.2326489"
+                              "localizacao":["-22.858662,-43.232529","CCMN"]
                             }
           ],
           "transporte": {
@@ -62,18 +62,20 @@
                                         {
                                           "id":1,
                                           "tipo":"Xerox",
+                                          "nome":"Xerox do CCMN",
                                           "servicos":"Cópia colorida e P&B",
                                           "preco":"0,40/página",
                                           "funcionamento":"6h-22h",
-                                          "localizacao":"Ali perto daquele lugar"
+                                          "localizacao":["Ali perto daquele lugar","CCMN"]
                                         },
                                         {
                                           "id":2,
                                           "tipo":"Gráfica",
+                                          "tipo":"Gráfica do CT",
                                           "servicos":"Cópia em P&B",
                                           "preco":"0,30/página",
                                           "funcionamento":"7h-22h",
-                                          "localizacao":"Ali perto daquele lugar"
+                                          "localizacao":["Ali perto daquele lugar","CCMN"]
                                         }
                           ],
                           "bancos":[
@@ -82,14 +84,14 @@
                                           "agencia":"Itaú",
                                           "tipo":"Agência",
                                           "funcionamento":"6h-22h",
-                                          "localizacao":"Ali perto daquele lugar"
+                                          "localizacao":["Ali perto daquele lugar","CCMN"]
                                         },
                                         {
                                           "id":2,
                                           "agencia":"Banco do Brasil",
                                           "tipo":"Caixa Eletrônico",
                                           "funcionamento":"7h-22h",
-                                          "localizacao":"Ali perto daquele lugar"
+                                          "localizacao":["Ali perto daquele lugar","CCMN"]
                                         }
                           ],
                           "comercio":[
@@ -99,7 +101,7 @@
                                           "nome":"Mercado do Seu Zé",
                                           "especialidade":"Ousadias",
                                           "funcionamento":"6h-22h",
-                                          "localizacao":"Ali perto daquele lugar"
+                                          "localizacao":["Ali perto daquele lugar","CCMN"]
                                         },
                                         {
                                           "id":2,
@@ -107,7 +109,7 @@
                                           "nome":"Mercado da Vila",
                                           "especialidade":"Geral",
                                           "funcionamento":"6h-22h",
-                                          "localizacao":"Ali perto daquele lugar"
+                                          "localizacao":["Ali perto daquele lugar","CCMN"]
                                         }
                           ],
                           "outros":[
@@ -117,7 +119,7 @@
                                           "nome":"Correios",
                                           "observacoes":"Não é uma caixa",
                                           "funcionamento":"6h-22h",
-                                          "localizacao":"Ali perto daquele lugar"
+                                          "localizacao":["Ali perto daquele lugar","CCMN"]
                                         },
                                         {
                                           "id":2,
@@ -125,7 +127,7 @@
                                           "nome":"Agência de Viagens",
                                           "observacoes":"Não vende pacote de viagens",
                                           "funcionamento":"6h-22h",
-                                          "localizacao":"Ali perto daquele lugar"
+                                          "localizacao":["Ali perto daquele lugar","CCMN"]
                                         }
                           ]
           },
@@ -136,14 +138,14 @@
                                           "nome":"Biblioteca Central do CCMN",
                                           "observacoes":"Possui computadores e espaço de estudo",
                                           "funcionamento":"6h-22h",
-                                          "localizacao":"Ali perto daquele lugar"
+                                          "localizacao":["Ali perto daquele lugar","CCMN"]
                                         },
                                         {
                                           "id":2,
                                           "tipo":"Biblioteca Central do IM",
                                           "observacoes":"Possui computadores e espaço de estudo",
                                           "funcionamento":"6h-22h",
-                                          "localizacao":"Ali perto daquele lugar"
+                                          "localizacao":["Ali perto daquele lugar","CCMN"]
                                         }
                           ],
                           "CAs-DAs":[
@@ -151,13 +153,13 @@
                                           "id":1,
                                           "nome":"CAInfo",
                                           "funcionamento":"6h-22h",
-                                          "localizacao":"Ali perto daquele lugar"
+                                          "localizacao":["Ali perto daquele lugar","CCMN"]
                                         },
                                         {
                                           "id":2,
                                           "nome":"DAEQ",
                                           "funcionamento":"6h-22h",
-                                          "localizacao":"Ali perto daquele lugar"
+                                          "localizacao":["Ali perto daquele lugar","CCMN"]
                                         }
                           ],
                           "auditorios":[
@@ -166,14 +168,14 @@
                                           "nome":"Pangea",
                                           "capacidade":"46 lugares",
                                           "funcionamento":"6h-22h",
-                                          "localizacao":"Ali perto daquele lugar"
+                                          "localizacao":["Ali perto daquele lugar","CCMN"]
                                         },
                                         {
                                           "id":2,
                                           "nome":"Roxinho",
                                           "capacidade":"500 lugares",
                                           "funcionamento":"6h-22h",
-                                          "localizacao":"Ali perto daquele lugar"
+                                          "localizacao":["Ali perto daquele lugar","CCMN"]
                                         }
                           ],
                           "secretarias":[
@@ -181,13 +183,13 @@
                                           "id":1,
                                           "nome":"Secretaria da Decania",
                                           "funcionamento":"6h-22h",
-                                          "localizacao":"Ali perto daquele lugar"
+                                          "localizacao":["Ali perto daquele lugar","CCMN"]
                                         },
                                         {
                                           "id":2,
                                           "nome":"Secretaria do CCMN",
                                           "funcionamento":"6h-22h",
-                                          "localizacao":"Ali perto daquele lugar"
+                                          "localizacao":["Ali perto daquele lugar","CCMN"]
                                         }
                           ]
           }
