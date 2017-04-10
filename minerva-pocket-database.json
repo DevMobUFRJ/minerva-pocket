@@ -71,7 +71,7 @@
                                         {
                                           "id":2,
                                           "tipo":"Gráfica",
-                                          "tipo":"Gráfica do CT",
+                                          "nome":"Gráfica do CT",
                                           "servicos":"Cópia em P&B",
                                           "preco":"0,30/página",
                                           "funcionamento":"7h-22h",
