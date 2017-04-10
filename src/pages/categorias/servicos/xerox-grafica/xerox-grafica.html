@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar color="minerva">
     <ion-title>
-      Alimentação
+      Xerox e Gráficas
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -9,11 +9,7 @@
 <ion-content padding>
   <ion-list>
     <ion-item *ngFor="let item of items" (click)="viewItem(item)">
-      <ion-thumbnail item-right>
-        <img class="thumbnail" src="assets/images/alimentacao/vermelhinho.png">
-      </ion-thumbnail>
-      <h2>{{item.nome}}</h2>
+      <h2>{{item.tipo}} - {{item.nome}} - {{item.localizacao[1]}}</h2>
     </ion-item>
   </ion-list>
 </ion-content>
- 

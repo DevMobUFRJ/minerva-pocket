@@ -58,7 +58,7 @@
                           ]
           },
           "servico": {
-                          "xerox-grafica":[
+                          "xeroxgrafica":[
                                         {
                                           "id":1,
                                           "tipo":"Xerox",
@@ -148,7 +148,7 @@
                                           "localizacao":["Ali perto daquele lugar","CCMN"]
                                         }
                           ],
-                          "CAs-DAs":[
+                          "CAsDAs":[
                                         {
                                           "id":1,
                                           "nome":"CAInfo",

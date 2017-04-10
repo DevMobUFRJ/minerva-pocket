@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-import {BdService} from  '../../../app/services/bd.service';
-import {AlimentacaoItemPage} from './alimentacao-item/alimentacao-item';
+import {BdService} from  '../../../../app/services/bd.service';
+import {XeroxGraficaItemPage} from './xerox-grafica-item/xerox-grafica-item';
 
 @Component({
-  selector: 'page-alimentacao',
-  templateUrl: 'alimentacao.html'
+  selector: 'page-xerox-grafica',
+  templateUrl: 'xerox-grafica.html'
 })
-export class AlimentacaoPage {
+export class XeroxGraficaPage {
 
   items:any;
 
@@ -16,7 +16,7 @@ export class AlimentacaoPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AlimentacaoPage');
+    console.log('ionViewDidLoad XeroxGraficaPage');
   }
 
   ngOnInit(){
@@ -26,11 +26,11 @@ export class AlimentacaoPage {
 
   getData(){
     this.bdService.getData().subscribe(response => {
-      this.items = response.data.alimentacao;
+      this.items = response.data.servico.xeroxgrafica;
     });
   }
 
   viewItem(item){
-    this.navCtrl.push(AlimentacaoItemPage, {item:item})
-  } 
+    this.navCtrl.push(XeroxGraficaItemPage, {item:item})
+  }
 }

@@ -14,6 +14,9 @@ import { ServicosPage } from '../pages/categorias/servicos/servicos';
 import { AlimentacaoPage } from '../pages/categorias/alimentacao/alimentacao';
 import { AlimentacaoItemPage } from '../pages/categorias/alimentacao/alimentacao-item/alimentacao-item';
 
+import { XeroxGraficaPage } from '../pages/categorias/servicos/xerox-grafica/xerox-grafica';
+import { XeroxGraficaItemPage } from '../pages/categorias/servicos/xerox-grafica/xerox-grafica-item/xerox-grafica-item';
+
 import { BdService } from './services/bd.service'
 
 @Component({
@@ -45,6 +48,9 @@ export class MyApp {
 
       { title: 'Alimentacao', component: AlimentacaoPage },
       { title: 'AlimentacaoItem', component: AlimentacaoItemPage },
+
+      { title: 'XeroxGrafica', component: XeroxGraficaPage },
+      { title: 'XeroxGraficaItem', component: XeroxGraficaItemPage },
     ];
   }
 

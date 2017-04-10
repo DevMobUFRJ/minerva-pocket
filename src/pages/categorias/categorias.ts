@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { ServicosPage } from '../categorias/servicos/servicos';
 import { AlimentacaoPage } from '../categorias/alimentacao/alimentacao';
+
 /*
   Generated class for the Todos page.
 
@@ -13,8 +14,10 @@ import { AlimentacaoPage } from '../categorias/alimentacao/alimentacao';
   templateUrl: 'categorias.html'
 })
 export class CategoriasPage {
+
   servicosPage=ServicosPage;
   alimentacaoPage=AlimentacaoPage;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
   }

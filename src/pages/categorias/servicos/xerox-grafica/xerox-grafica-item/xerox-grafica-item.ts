@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
-  selector: 'page-alimentacao-item',
-  templateUrl: 'alimentacao-item.html'
+  selector: 'page-xerox-grafica-item',
+  templateUrl: 'xerox-grafica-item.html'
 })
-export class AlimentacaoItemPage {
+export class XeroxGraficaItemPage {
 
   item:any;
 
@@ -14,7 +14,7 @@ export class AlimentacaoItemPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AlimentacaoItemPage');
+    console.log('ionViewDidLoad XeroxGraficaItemPage');
   }
 
   toggleDetails(data) {

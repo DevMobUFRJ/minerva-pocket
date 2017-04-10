@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import {XeroxGraficaPage} from '../servicos/xerox-grafica/xerox-grafica';
+
 /*
   Generated class for the Servicos page.
 
@@ -12,6 +14,8 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'servicos.html'
 })
 export class ServicosPage {
+
+    xeroxgraficaPage=XeroxGraficaPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
