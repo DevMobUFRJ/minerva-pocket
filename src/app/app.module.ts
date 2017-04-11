@@ -13,6 +13,8 @@ import { AlimentacaoItemPage } from '../pages/categorias/alimentacao//alimentaca
 import { XeroxGraficaPage } from '../pages/categorias/servicos/xerox-grafica/xerox-grafica';
 import { XeroxGraficaItemPage } from '../pages/categorias/servicos/xerox-grafica/xerox-grafica-item/xerox-grafica-item';
 
+import { TransportePage } from '../pages/categorias/transporte/transporte';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -30,6 +32,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
     XeroxGraficaPage,
     XeroxGraficaItemPage,
+
+    TransportePage,
 
   ],
   imports: [
@@ -49,6 +53,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
     XeroxGraficaPage,
     XeroxGraficaItemPage,
+
+    TransportePage,
   ],
   providers: [
     StatusBar,

@@ -17,12 +17,14 @@ import { AlimentacaoItemPage } from '../pages/categorias/alimentacao/alimentacao
 import { XeroxGraficaPage } from '../pages/categorias/servicos/xerox-grafica/xerox-grafica';
 import { XeroxGraficaItemPage } from '../pages/categorias/servicos/xerox-grafica/xerox-grafica-item/xerox-grafica-item';
 
-import { BdService } from './services/bd.service'
+import { TransportePage } from '../pages/categorias/transporte/transporte';
+
+import { BdService } from './services/bd.service';
 
 @Component({
   templateUrl: 'app.html',
-  providers:[BdService]
-})
+    providers:[BdService]
+  })
 
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
@@ -51,6 +53,8 @@ export class MyApp {
 
       { title: 'XeroxGrafica', component: XeroxGraficaPage },
       { title: 'XeroxGraficaItem', component: XeroxGraficaItemPage },
+
+      { title: 'TransportePage', component: TransportePage },
     ];
   }
 
