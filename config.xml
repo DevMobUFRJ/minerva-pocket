@@ -8,6 +8,7 @@
   <allow-navigation href="http://ionic.local/*"/>
   <allow-navigation href="http://192.168.0.105:8100"/>
   <allow-navigation href="http://192.168.0.106:8100"/>
+  <allow-navigation href="http://146.164.250.193:8100"/>
   <preference name="orientation" value="portrait"/>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
