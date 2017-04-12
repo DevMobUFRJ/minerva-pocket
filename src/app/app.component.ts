@@ -19,6 +19,8 @@ import { XeroxGraficaItemPage } from '../pages/categorias/servicos/xerox-grafica
 
 import { TransportePage } from '../pages/categorias/transporte/transporte';
 
+import { AcademicoPage } from '../pages/categorias/academico/academico';
+
 import { BdService } from './services/bd.service';
 
 @Component({
@@ -55,6 +57,8 @@ export class MyApp {
       { title: 'XeroxGraficaItem', component: XeroxGraficaItemPage },
 
       { title: 'TransportePage', component: TransportePage },
+
+      { title: 'AcademicoPage', component: AcademicoPage },
     ];
   }
 
@@ -62,7 +66,7 @@ export class MyApp {
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      this.statusBar.styleDefault();
+      this.statusBar.backgroundColorByHexString('#01994a');
       this.splashScreen.hide();
     });
   }

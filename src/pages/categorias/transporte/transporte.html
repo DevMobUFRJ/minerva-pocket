@@ -8,17 +8,11 @@
 
 <ion-content>
   <ion-list>
-    <ion-item>
+    <ion-item *ngFor="let item of itensLista" class="item-lista">
       <ion-thumbnail item-right class="item-img">
-        <img class="thumbnail" src="assets/images/servicos/xerox.jpg">
+        <img class="thumbnail" src={{item.imagem}}>
       </ion-thumbnail>
-      <h1>Internos</h1>
-    </ion-item>
-    <ion-item>
-      <ion-thumbnail item-right class="item-img">
-        <img class="thumbnail" src="assets/images/servicos/xerox.jpg">
-      </ion-thumbnail>
-      <h1>Externos</h1>
+      <h1>{{item.titulo}}</h1>
     </ion-item>
   </ion-list>
 </ion-content>

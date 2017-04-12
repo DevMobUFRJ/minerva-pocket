@@ -14,13 +14,18 @@ import {XeroxGraficaPage} from '../servicos/xerox-grafica/xerox-grafica';
   templateUrl: 'servicos.html'
 })
 export class ServicosPage {
-
-    xeroxgraficaPage=XeroxGraficaPage;
+  itensLista: any;
+  xeroxgraficaPage=XeroxGraficaPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.itensLista = [
+      {titulo:'Xerox e Gráficas', imagem:'assets/images/servicos/xerox.jpg', page: 'xeroxgraficaPage'},
+      {titulo:'Bancos', imagem:'assets/images/servicos/banco.jpg', page:'bancoPage'},
+      {titulo:'Comércio', imagem:'assets/images/servicos/comercio.jpg', page:'comercioPage'},
+      {titulo:'Outros', imagem:'assets/images/servicos/outros.jpg', page:'outrosPage'},
 
+    ];
   }
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad ServicosPage');
   }

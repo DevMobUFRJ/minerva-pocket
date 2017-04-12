@@ -15,6 +15,8 @@ import { XeroxGraficaItemPage } from '../pages/categorias/servicos/xerox-grafica
 
 import { TransportePage } from '../pages/categorias/transporte/transporte';
 
+import { AcademicoPage } from '../pages/categorias/academico/academico';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -34,6 +36,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     XeroxGraficaItemPage,
 
     TransportePage,
+
+    AcademicoPage,
 
   ],
   imports: [
@@ -55,6 +59,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     XeroxGraficaItemPage,
 
     TransportePage,
+
+    AcademicoPage,
   ],
   providers: [
     StatusBar,
