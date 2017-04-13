@@ -16,10 +16,10 @@ export class AcademicoPage {
   itensLista: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.itensLista = [
-      {titulo:'Bibliotecas', imagem:'assets/images/transporte/interno.jpg', page:''},
-      {titulo:'CAs & DAs', imagem:'assets/images/transporte/interno.jpg', page:''},
-      {titulo:'Auditórios', imagem:'assets/images/transporte/interno.jpg', page:''},
-      {titulo:'Secretarias', imagem:'assets/images/transporte/interno.jpg', page:''},
+      {titulo:'Bibliotecas', imagem:'assets/images/academico/biblioteca.jpg', page:''},
+      {titulo:'CAs & DAs', imagem:'assets/images/academico/ca.jpg', page:''},
+      {titulo:'Auditórios', imagem:'assets/images/academico/auditorio.jpg', page:''},
+      {titulo:'Secretarias', imagem:'assets/images/academico/secretaria.jpg', page:''},
     ];
   }
 
