@@ -67,10 +67,12 @@ export class MyApp {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       this.statusBar.backgroundColorByHexString('#01994a');
-      this.splashScreen.hide();
-    });
-  }
-
+      setTimeout(() => {
+             this.splashScreen.hide();
+           }, 100);
+         });
+    }
+  
   openPage(page) {
     // close the menu when clicking a link from the menu
     this.menu.close();
