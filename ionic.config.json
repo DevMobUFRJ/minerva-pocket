@@ -2,5 +2,23 @@
   "name": "Minerva Pocket",
   "app_id": "",
   "v2": true,
-  "typescript": true
+  "typescript": true,
+  "proxies": [
+    {
+      "path": "/api/alimentacao_api",
+      "proxyUrl": "http://aqueous-waters-67532.herokuapp.com/api/alimentacao_api"
+    },
+    {
+      "path": "/api/transporte_api",
+      "proxyUrl": "http://aqueous-waters-67532.herokuapp.com/api/transporte_api"
+    },
+    {
+      "path": "/api/academico_api",
+      "proxyUrl": "http://aqueous-waters-67532.herokuapp.com/api/academico_api"
+    },
+    {
+      "path": "/api/servico_api",
+      "proxyUrl": "http://aqueous-waters-67532.herokuapp.com/api/servico_api"
+    }
+  ]
 }

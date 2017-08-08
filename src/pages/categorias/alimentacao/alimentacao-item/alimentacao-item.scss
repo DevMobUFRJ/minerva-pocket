@@ -25,7 +25,7 @@ page-alimentacao-item {
   }
 
   .titulo{
-    color: white; 
+    color: white;
     margin-top: -6vh;
     margin-left: 3vw;
     font-size: 4vh;
@@ -36,5 +36,9 @@ page-alimentacao-item {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 150px;
+  }
+
+  .item-inner{
+    margin: 0 15px;
   }
 }

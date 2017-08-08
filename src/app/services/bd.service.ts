@@ -4,16 +4,36 @@ import 'rxjs/Rx';
 
 @Injectable()
 export class BdService{
-  
+
     http:any;
-    baseUrl: String;
+
+    academicoUrl: String;
+    servicoUrl: String;
+    alimentacaoUrl: String;
+    transporteUrl: String;
 
     constructor (http:Http){
       this.http = http;
-      this.baseUrl = "https://devmobufrj.github.io/minerva-pocket/minerva-pocket-database.json";
+      this.alimentacaoUrl = "http://aqueous-waters-67532.herokuapp.com/api/alimentacao_api";
+      this.academicoUrl = "http://aqueous-waters-67532.herokuapp.com/api/academico_api";
+      this.servicoUrl = "http://aqueous-waters-67532.herokuapp.com/api/servico_api";
+      this.transporteUrl = "http://aqueous-waters-67532.herokuapp.com/api/transporte_api";
     }
 
-    getData(){
-      return this.http.get(this.baseUrl).map(res => res.json());
+    getAlimentacaoData(){
+      return this.http.get(this.alimentacaoUrl).map(res => res.json());
     }
+
+    getTransporteData(){
+      return this.http.get(this.transporteUrl).map(res => res.json());
+    }
+
+    getAcademicoData(){
+      return this.http.get(this.academicoUrl).map(res => res.json());
+    }
+
+    getServicoData(){
+      return this.http.get(this.servicoUrl).map(res => res.json());
+    }
+
 }

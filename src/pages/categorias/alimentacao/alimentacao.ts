@@ -20,17 +20,18 @@ export class AlimentacaoPage {
   }
 
   ngOnInit(){
-    this.getData();
+    this.getAlimentacaoData();
     console.log('foi...')
   }
 
-  getData(){
-    this.bdService.getData().subscribe(response => {
-      this.items = response.data.alimentacao;
+  getAlimentacaoData(){
+    this.bdService.getAlimentacaoData().subscribe(response => {
+      this.items = response;
     });
+    console.log('carregando lugares de alimentacao')
   }
 
   viewItem(item){
     this.navCtrl.push(AlimentacaoItemPage, {item:item})
-  } 
+  }
 }

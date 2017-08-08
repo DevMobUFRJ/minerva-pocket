@@ -4,11 +4,12 @@
   <description>App de guia da Universidade Federal do Rio de Janeiro</description>
   <author email="devmobufrj@gmail.com" href="http://facebook.com/DevMobUFRJ">DevMob UFRJ</author>
   <content src="index.html"/>
-  <access origin="*"/>
+  <access origin="*://*.aqueous-waters-67532.herokuapp.com/*"/>
   <allow-navigation href="http://ionic.local/*"/>
   <allow-navigation href="http://192.168.0.105:8100"/>
   <allow-navigation href="http://192.168.0.106:8100"/>
   <allow-navigation href="http://146.164.250.193:8100"/>
+  <allow-navigation href="http://aqueous-waters-67532.herokuapp.com/api/*"/>
   <preference name="orientation" value="portrait"/>
   <preference name="loadUrlTimeoutValue" value="700000"/>
   <preference name="webviewbounce" value="false"/>

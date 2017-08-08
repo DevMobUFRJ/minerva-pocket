@@ -20,13 +20,13 @@ export class XeroxGraficaPage {
   }
 
   ngOnInit(){
-    this.getData();
+    this.getServicoData();
     console.log('foi...')
   }
 
-  getData(){
-    this.bdService.getData().subscribe(response => {
-      this.items = response.data.servico.xeroxgrafica;
+  getServicoData(){
+    this.bdService.getServicoData().subscribe(response => {
+      this.items = response;
     });
   }
 
