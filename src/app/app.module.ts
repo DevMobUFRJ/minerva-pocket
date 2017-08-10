@@ -5,13 +5,19 @@ import { CategoriasPage } from '../pages/categorias/categorias';
 import { FavoritosPage } from '../pages/favoritos/favoritos';
 import { TabsPage } from '../pages/tabs/tabs';
 
-import { ServicosPage } from '../pages/categorias/servicos/servicos';
-
 import { AlimentacaoPage } from '../pages/categorias/alimentacao/alimentacao';
 import { AlimentacaoItemPage } from '../pages/categorias/alimentacao//alimentacao-item/alimentacao-item';
 
+import { ServicosPage } from '../pages/categorias/servicos/servicos';
+
 import { XeroxGraficaPage } from '../pages/categorias/servicos/xerox-grafica/xerox-grafica';
 import { XeroxGraficaItemPage } from '../pages/categorias/servicos/xerox-grafica/xerox-grafica-item/xerox-grafica-item';
+import { BancoPage } from '../pages/categorias/servicos/banco/banco';
+import { BancoItemPage } from '../pages/categorias/servicos/banco/banco-item/banco-item';
+import { ComercioPage } from '../pages/categorias/servicos/comercio/comercio';
+import { ComercioItemPage } from '../pages/categorias/servicos/comercio/comercio-item/comercio-item';
+import { OutroPage } from '../pages/categorias/servicos/outro/outro';
+import { OutroItemPage } from '../pages/categorias/servicos/outro/outro-item/outro-item';
 
 import { TransportePage } from '../pages/categorias/transporte/transporte';
 
@@ -34,6 +40,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
     XeroxGraficaPage,
     XeroxGraficaItemPage,
+    BancoPage,
+    BancoItemPage,
+    ComercioPage,
+    ComercioItemPage,
+    OutroPage,
+    OutroItemPage,
 
     TransportePage,
 
@@ -57,6 +69,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
     XeroxGraficaPage,
     XeroxGraficaItemPage,
+    BancoPage,
+    BancoItemPage,
+    ComercioPage,
+    ComercioItemPage,
+    OutroPage,
+    OutroItemPage,
 
     TransportePage,
 

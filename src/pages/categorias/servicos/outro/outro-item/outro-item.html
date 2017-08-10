@@ -14,24 +14,24 @@
   <h1 class="titulo">{{item[0].nome}}</h1>
   <ion-list no-padding>
 
-    <ion-item (click)="toggleDetails(tipo_de_comida)">
-      Tipo de Comida
+    <ion-item (click)="toggleDetails(servico)">
+      Serviço
       <ion-note item-right>
-        {{item[0].tipo_de_comida}}
+        {{item[0].servico}}
       </ion-note>
     </ion-item>
 
-    <ion-item (click)="toggleDetails(preco)">
-      Preços
+    <ion-item (click)="toggleDetails(observacao)">
+      Observação
       <ion-note item-right>
-        {{item[0].preco}}
+         {{item[0].observacao}}
       </ion-note>
-    </ion-item>
+      </ion-item>
 
-    <ion-item (click)="toggleDetails(pagamento)">
-      Pagamento
+    <ion-item (click)="toggleDetails(descricao)">
+      Descrição
       <ion-note item-right>
-         {{item[0].tipo_de_pagamento}}
+         {{item[0].descricao}}
       </ion-note>
       </ion-item>
 
@@ -42,7 +42,7 @@
       </ion-note>
     </ion-item>
 
-    <ion-item (click)="toggleDetails(pagamento)">
+    <ion-item (click)="toggleDetails(localizacao)">
       Localização
       <div>
 
