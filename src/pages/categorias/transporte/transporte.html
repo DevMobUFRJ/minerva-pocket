@@ -8,7 +8,7 @@
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let item of itensLista" class="item-lista">
+    <ion-item *ngFor="let item of itensLista" [navPush]="item.page" class="item-lista">
       <ion-thumbnail item-right class="item-img">
         <img class="thumbnail" src={{item.imagem}}>
       </ion-thumbnail>

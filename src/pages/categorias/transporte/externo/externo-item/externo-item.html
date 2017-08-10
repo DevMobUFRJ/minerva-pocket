@@ -1,0 +1,46 @@
+
+<ion-header no-border >
+
+  <ion-navbar color="transparente">
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="sombra">
+    <img alt="image" class="imagem-item" src="{{item[0].imagem}}">
+  </div>
+  <h1 class="titulo">{{item[0].linha}}</h1>
+  <ion-list no-padding>
+
+    <ion-item (click)="toggleDetails(tipo)">
+      Tipo
+      <ion-note item-right>
+        {{item[0].tipo}}
+      </ion-note>
+    </ion-item>
+
+    <ion-item ion-item (click)="toggleDetails(funcionamento)">
+      Funcionamento
+      <ion-note item-right>
+        {{item[0].funcionamento}}
+      </ion-note>
+    </ion-item>
+
+    <ion-item (click)="toggleDetails(observacao)">
+      Observações
+      <ion-note item-right>
+        {{item[0].observacao}}
+      </ion-note>
+    </ion-item>
+
+    <ion-item (click)="toggleDetails(pontosQuePassa)">
+      Pontos
+      <ion-note item-right>
+        {{item[0].pontosQuePassa}}
+      </ion-note>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

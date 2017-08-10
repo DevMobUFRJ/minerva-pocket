@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import {InternoPage} from '../transporte/interno/interno';
+import {ExternoPage} from '../transporte/externo/externo';
+
+
 /*
   Generated class for the Transporte page.
 
@@ -13,10 +17,14 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class TransportePage {
   itensLista: any;
+
+  internoPage     = InternoPage;
+  externoPage     = ExternoPage;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.itensLista = [
-      {titulo:'Internos', imagem:'assets/images/transporte/interno.jpg', page:''},
-      {titulo:'Externos', imagem:'assets/images/transporte/externo.jpg', page:''}
+      {titulo:'Internos', imagem:'assets/images/transporte/interno.jpg', page:InternoPage},
+      {titulo:'Externos', imagem:'assets/images/transporte/externo.jpg', page:this.externoPage}
     ];
   }
 

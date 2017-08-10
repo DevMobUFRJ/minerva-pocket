@@ -5,8 +5,9 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content >
-  <ion-list >
+
+<ion-content>
+  <ion-list>
     <ion-item *ngFor="let item of itensLista" [navPush]="item.page" class="item-lista">
       <ion-thumbnail item-right class="item-img">
         <img class="thumbnail" src={{item.imagem}}>

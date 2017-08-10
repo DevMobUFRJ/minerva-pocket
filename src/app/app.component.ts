@@ -24,6 +24,10 @@ import { OutroPage } from '../pages/categorias/servicos/outro/outro';
 import { OutroItemPage } from '../pages/categorias/servicos/outro/outro-item/outro-item';
 
 import { TransportePage } from '../pages/categorias/transporte/transporte';
+import { InternoPage } from '../pages/categorias/transporte/interno/interno';
+import { InternoItemPage } from '../pages/categorias/transporte/interno/interno-item/interno-item';
+import { ExternoPage } from '../pages/categorias/transporte/externo/externo';
+import { ExternoItemPage } from '../pages/categorias/transporte/externo/externo-item/externo-item';
 
 import { AcademicoPage } from '../pages/categorias/academico/academico';
 
@@ -69,6 +73,10 @@ export class MyApp {
       { title: 'OutroItem', component: OutroItemPage },
 
       { title: 'TransportePage', component: TransportePage },
+      { title: 'ExternoPage', component: ExternoPage },
+      { title: 'ExternoItemPage', component: ExternoItemPage },
+      { title: 'InternoPage', component: InternoPage },
+      { title: 'InternoItemPage', component: InternoItemPage },
 
       { title: 'AcademicoPage', component: AcademicoPage },
     ];
