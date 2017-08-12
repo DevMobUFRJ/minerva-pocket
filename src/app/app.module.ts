@@ -2,7 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { CategoriasPage } from '../pages/categorias/categorias';
-import { FavoritosPage } from '../pages/favoritos/favoritos';
+import { NavegarPage } from '../pages/navegar/navegar';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { AlimentacaoPage } from '../pages/categorias/alimentacao/alimentacao';
@@ -34,7 +34,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     CategoriasPage,
-    FavoritosPage,
+    NavegarPage,
     TabsPage,
 
     ServicosPage,
@@ -67,7 +67,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     CategoriasPage,
-    FavoritosPage,
+    NavegarPage,
     TabsPage,
 
     ServicosPage,

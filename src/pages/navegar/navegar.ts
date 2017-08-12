@@ -3,15 +3,15 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
-  selector: 'page-favoritos',
-  templateUrl: 'favoritos.html'
+  selector: 'page-navegar',
+  templateUrl: 'navegar.html'
 })
-export class FavoritosPage {
+export class NavegarPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad FavoritosPage');
+    console.log('ionViewDidLoad NavegarPage');
   }
 
 }

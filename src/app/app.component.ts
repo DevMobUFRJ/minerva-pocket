@@ -6,7 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { CategoriasPage } from '../pages/categorias/categorias';
-import { FavoritosPage } from '../pages/favoritos/favoritos';
+import { NavegarPage } from '../pages/navegar/navegar';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { AlimentacaoPage } from '../pages/categorias/alimentacao/alimentacao';
@@ -56,7 +56,7 @@ export class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'Categorias', component: CategoriasPage },
-      { title: 'Favoritos', component: FavoritosPage },
+      { title: 'Navegar', component: NavegarPage },
 
       { title: 'Servicos', component: ServicosPage },
 
