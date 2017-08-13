@@ -26,6 +26,14 @@ import { ExternoPage } from '../pages/categorias/transporte/externo/externo';
 import { ExternoItemPage } from '../pages/categorias/transporte/externo/externo-item/externo-item';
 
 import { AcademicoPage } from '../pages/categorias/academico/academico';
+import { AuditorioPage } from '../pages/categorias/academico/auditorio/auditorio';
+import { AuditorioItemPage } from '../pages/categorias/academico/auditorio/auditorio-item/auditorio-item';
+import { BibliotecaPage } from '../pages/categorias/academico/biblioteca/biblioteca';
+import { BibliotecaItemPage } from '../pages/categorias/academico/biblioteca/biblioteca-item/biblioteca-item';
+import { CaDaPage } from '../pages/categorias/academico/cada/cada';
+import { CaDaItemPage } from '../pages/categorias/academico/cada/cada-item/cada-item';
+import { SecretariaPage } from '../pages/categorias/academico/secretaria/secretaria';
+import { SecretariaItemPage } from '../pages/categorias/academico/secretaria/secretaria-item/secretaria-item';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -58,6 +66,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     InternoItemPage,
 
     AcademicoPage,
+    AuditorioPage,
+    AuditorioItemPage,
+    BibliotecaPage,
+    BibliotecaItemPage,
+    CaDaPage,
+    CaDaItemPage,
+    SecretariaPage,
+    SecretariaItemPage,
 
   ],
   imports: [
@@ -91,6 +107,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     InternoItemPage,
 
     AcademicoPage,
+    AuditorioPage,
+    AuditorioItemPage,
+    BibliotecaPage,
+    BibliotecaItemPage,
+    CaDaPage,
+    CaDaItemPage,
+    SecretariaPage,
+    SecretariaItemPage,
   ],
   providers: [
     StatusBar,

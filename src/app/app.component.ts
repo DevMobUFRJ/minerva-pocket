@@ -30,6 +30,14 @@ import { ExternoPage } from '../pages/categorias/transporte/externo/externo';
 import { ExternoItemPage } from '../pages/categorias/transporte/externo/externo-item/externo-item';
 
 import { AcademicoPage } from '../pages/categorias/academico/academico';
+import { AuditorioPage } from '../pages/categorias/academico/auditorio/auditorio';
+import { AuditorioItemPage } from '../pages/categorias/academico/auditorio/auditorio-item/auditorio-item';
+import { BibliotecaPage } from '../pages/categorias/academico/biblioteca/biblioteca';
+import { BibliotecaItemPage } from '../pages/categorias/academico/biblioteca/biblioteca-item/biblioteca-item';
+import { CaDaPage } from '../pages/categorias/academico/cada/cada';
+import { CaDaItemPage } from '../pages/categorias/academico/cada/cada-item/cada-item';
+import { SecretariaPage } from '../pages/categorias/academico/secretaria/secretaria';
+import { SecretariaItemPage } from '../pages/categorias/academico/secretaria/secretaria-item/secretaria-item';
 
 import { BdService } from './services/bd.service';
 
@@ -79,6 +87,14 @@ export class MyApp {
       { title: 'InternoItemPage', component: InternoItemPage },
 
       { title: 'AcademicoPage', component: AcademicoPage },
+      { title: 'AuditorioPage', component: AuditorioPage },
+      { title: 'AuditorioItemPage', component: AuditorioItemPage },
+      { title: 'BibliotecaPage', component: BibliotecaPage },
+      { title: 'BibliotecaItemPage', component: BibliotecaItemPage },
+      { title: 'CaDaPage', component: CaDaPage },
+      { title: 'CaDaItemPage', component: CaDaItemPage },
+      { title: 'SecretariaPage', component: SecretariaPage },
+      { title: 'SecretariaItemPage', component: SecretariaItemPage },
     ];
   }
 
