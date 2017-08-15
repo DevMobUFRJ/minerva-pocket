@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, Loading, LoadingController, NavParams } from 'ionic-angular';
 
 import {BdService} from  '../../../app/services/bd.service';
 import {AlimentacaoItemPage} from './alimentacao-item/alimentacao-item';
@@ -12,7 +12,12 @@ export class AlimentacaoPage {
 
   items:any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private bdService: BdService) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private bdService: BdService, public loadingController: LoadingController) {
+    // let loader = this.loadingController.create({
+    //       spinner: "ios",
+    //       content: "Carregando dados..."
+    //     });
+    // loader.present();
   }
 
   ionViewDidLoad() {
@@ -34,4 +39,14 @@ export class AlimentacaoPage {
   viewItem(item){
     this.navCtrl.push(AlimentacaoItemPage, {item:item})
   }
+
+  doRefresh(refresher){
+    this.bdService.getAlimentacaoData().subscribe(response => {
+      this.items = response;
+
+      if(refresher != 0)
+         refresher.complete();
+    });
+  }
+
 }

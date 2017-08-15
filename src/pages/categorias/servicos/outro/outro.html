@@ -11,6 +11,9 @@
     <ion-item *ngFor="let item of items" (click)="viewItem(item)">
 
       <h2>{{item[0].nome}} - {{item[0].localizacao[0].centro}}</h2>
+      <div *ngIf="!item[0].nome">
+        <h2>Sem resultados até o momento.</h2>
+      </div>
     </ion-item>
   </ion-list>
 </ion-content>
