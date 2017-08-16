@@ -33,4 +33,13 @@ export class ComercioPage {
   viewItem(item){
     this.navCtrl.push(ComercioItemPage, {item:item})
   }
+
+  doRefresh(refresher){
+    this.bdService.getServicoData().subscribe(response => {
+      this.items = response['1'];
+
+      if(refresher != 0)
+        refresher.complete();
+    });
+  }
 }

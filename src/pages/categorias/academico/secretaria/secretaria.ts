@@ -33,4 +33,13 @@ export class SecretariaPage {
   viewItem(item){
     this.navCtrl.push(SecretariaItemPage, {item:item})
   }
+
+  doRefresh(refresher){
+    this.bdService.getAcademicoData().subscribe(response => {
+      this.items = response['2'];
+
+      if(refresher != 0)
+        refresher.complete();
+    });
+  }
 }

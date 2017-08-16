@@ -33,4 +33,13 @@ export class BancoPage {
   viewItem(item){
     this.navCtrl.push(BancoItemPage, {item:item})
   }
+
+  doRefresh(refresher){
+    this.bdService.getServicoData().subscribe(response => {
+      this.items = response['0'];
+
+      if(refresher != 0)
+        refresher.complete();
+    });
+  }
 }

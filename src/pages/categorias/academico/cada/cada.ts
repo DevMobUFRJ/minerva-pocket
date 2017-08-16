@@ -33,4 +33,13 @@ export class CaDaPage {
   viewItem(item){
     this.navCtrl.push(CaDaItemPage, {item:item})
   }
+
+  doRefresh(refresher){
+    this.bdService.getAcademicoData().subscribe(response => {
+      this.items = response['0'];
+
+      if(refresher != 0)
+        refresher.complete();
+    });
+  }
 }

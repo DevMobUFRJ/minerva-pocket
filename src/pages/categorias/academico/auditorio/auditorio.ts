@@ -33,4 +33,13 @@ export class AuditorioPage {
   viewItem(item){
     this.navCtrl.push(AuditorioItemPage, {item:item})
   }
+
+  doRefresh(refresher){
+    this.bdService.getAcademicoData().subscribe(response => {
+      this.items = response['3'];
+
+      if(refresher != 0)
+        refresher.complete();
+    });
+  }
 }

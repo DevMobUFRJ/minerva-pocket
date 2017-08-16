@@ -33,4 +33,13 @@ export class InternoPage {
   viewItem(item){
     this.navCtrl.push(InternoItemPage, {item:item})
   }
+
+  doRefresh(refresher){
+    this.bdService.getTransporteData().subscribe(response => {
+      this.items = response['0'];
+
+      if(refresher != 0)
+        refresher.complete();
+    });
+  }
 }

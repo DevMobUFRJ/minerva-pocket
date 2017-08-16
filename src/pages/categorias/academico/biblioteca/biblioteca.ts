@@ -33,4 +33,13 @@ export class BibliotecaPage {
   viewItem(item){
     this.navCtrl.push(BibliotecaItemPage, {item:item})
   }
+
+  doRefresh(refresher){
+    this.bdService.getAcademicoData().subscribe(response => {
+      this.items = response['1'];
+
+      if(refresher != 0)
+        refresher.complete();
+    });
+  }
 }

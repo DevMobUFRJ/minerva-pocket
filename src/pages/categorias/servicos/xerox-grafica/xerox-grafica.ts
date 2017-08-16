@@ -33,4 +33,13 @@ export class XeroxGraficaPage {
   viewItem(item){
     this.navCtrl.push(XeroxGraficaItemPage, {item:item})
   }
+
+  doRefresh(refresher){
+    this.bdService.getServicoData().subscribe(response => {
+      this.items = response['3'];
+
+      if(refresher != 0)
+        refresher.complete();
+    });
+  }
 }

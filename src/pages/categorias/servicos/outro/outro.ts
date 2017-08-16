@@ -33,4 +33,13 @@ export class OutroPage {
   viewItem(item){
     this.navCtrl.push(OutroItemPage, {item:item})
   }
+
+  doRefresh(refresher){
+    this.bdService.getServicoData().subscribe(response => {
+      this.items = response['2'];
+
+      if(refresher != 0)
+        refresher.complete();
+    });
+  }
 }

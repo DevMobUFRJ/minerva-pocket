@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, Loading, LoadingController, NavParams } from 'ionic-angular';
+import { NavController, LoadingController, NavParams } from 'ionic-angular';
 
 import {BdService} from  '../../../app/services/bd.service';
 import {AlimentacaoItemPage} from './alimentacao-item/alimentacao-item';

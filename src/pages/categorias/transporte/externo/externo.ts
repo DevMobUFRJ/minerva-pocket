@@ -33,4 +33,13 @@ export class ExternoPage {
   viewItem(item){
     this.navCtrl.push(ExternoItemPage, {item:item})
   }
+
+  doRefresh(refresher){
+    this.bdService.getTransporteData().subscribe(response => {
+      this.items = response['1'];
+
+      if(refresher != 0)
+        refresher.complete();
+    });
+  }
 }
