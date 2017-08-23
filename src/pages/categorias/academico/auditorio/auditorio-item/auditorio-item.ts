@@ -20,4 +20,8 @@ export class AuditorioItemPage {
   toggleDetails(data) {
 
   }
+
+  toNumber( LocArray:any ){
+    return parseFloat(LocArray);
+  }
 }

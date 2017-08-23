@@ -38,6 +38,8 @@ import { SecretariaItemPage } from '../pages/categorias/academico/secretaria/sec
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { AgmCoreModule } from '@agm/core';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -77,7 +79,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
   ],
   imports: [
-    IonicModule.forRoot(MyApp,{tabsPlacement: 'top',tabsHideOnSubPages: true})
+    IonicModule.forRoot(MyApp,{tabsPlacement: 'top',tabsHideOnSubPages: true}),
+    AgmCoreModule.forRoot({
+        apiKey: 'AIzaSyAMYqI8gD4ulLJHXDZpAeUhPZ-NyLfNHEs'
+      })
   ],
   bootstrap: [IonicApp],
   entryComponents: [

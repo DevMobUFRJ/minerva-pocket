@@ -20,4 +20,8 @@ export class CaDaItemPage {
   toggleDetails(data) {
 
   }
+
+  toNumber( LocArray:any ){
+    return parseFloat(LocArray);
+  }
 }

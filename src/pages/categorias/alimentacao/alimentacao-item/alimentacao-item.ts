@@ -20,4 +20,8 @@ export class AlimentacaoItemPage {
   toggleDetails(data) {
 
   }
+
+  toNumber( LocArray:any ){
+    return parseFloat(LocArray);
+  }
 }

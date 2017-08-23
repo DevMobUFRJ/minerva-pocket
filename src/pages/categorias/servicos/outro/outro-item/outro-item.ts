@@ -20,4 +20,8 @@ export class OutroItemPage {
   toggleDetails(data) {
 
   }
+
+  toNumber( LocArray:any ){
+    return parseFloat(LocArray);
+  }
 }

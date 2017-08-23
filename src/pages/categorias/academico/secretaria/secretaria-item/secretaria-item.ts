@@ -20,4 +20,8 @@ export class SecretariaItemPage {
   toggleDetails(data) {
 
   }
+
+  toNumber( LocArray:any ){
+    return parseFloat(LocArray);
+  }
 }
