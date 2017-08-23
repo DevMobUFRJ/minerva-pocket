@@ -1,40 +1,21 @@
 page-sevicos{
 
 }
-.item-inner{
-  padding-right: 0px!important;
-}
-
-.thumbnail{
-  width: 120px !important;
-}
-
-.item-img{
-  margin:0 !important;
-  margin-left: 10px;
-}
-
-.item-lista{
-  padding-left: 0px;
-}
-
-h1{
-  padding-left: 16px;
-}
-
-ion-label{
-  margin: 13px 0!important;
-}
-
 ion-icon{
-  font-size: 3em;
+  font-size: 3em!important;
 }
-
-ion-thumbnail{
-padding: 20px;
-
+.thumb{
+  margin:0!important;
+  padding-left: 20px;
+  padding-top: 15px;
 }
-
-ion-item{
-  height: 150px;
+.item-lista{
+  height: 22vh;
+}
+.item-lista > div.item-inner{
+  border: 0!important;
+}
+#cor1{
+  background-color: red;
+  color: white;
 }
