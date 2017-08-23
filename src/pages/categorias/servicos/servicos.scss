@@ -1,7 +1,7 @@
-page-sevicos{
+.page-sevicos{
 
 }
-ion-icon{
+.icone{
   font-size: 3em!important;
 }
 .thumb{
@@ -16,6 +16,21 @@ ion-icon{
   border: 0!important;
 }
 #cor1{
-  background-color: red;
+  background: linear-gradient(180deg , #325865 35%, #367380 100%);
   color: white;
 }
+#cor2{
+  background:linear-gradient(180deg , #B2805A 35%, #D9A07A 100%);
+  color: white;
+}
+#cor3{
+  background:linear-gradient(180deg , #46A576 35%, #4CC691 100%);
+  color: white;
+}
+#cor4{
+  background-color: #8B4645;
+  background:linear-gradient(180deg , #8B4645 35%, rgba(139, 70, 69, 0.84) 100%);
+  color: white;
+}
+
+

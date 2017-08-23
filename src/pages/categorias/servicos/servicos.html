@@ -11,7 +11,7 @@
     <ion-item *ngFor="let item of itensLista" [navPush]="item.page" [id]="item.id" class="item-lista">
       <ion-thumbnail item-left class="thumb" >
         <!-- <img class="thumbnail" src={{item.imagem}}> -->
-        <ion-icon [name]="item.name" ></ion-icon>
+        <ion-icon [name]="item.name"  class="icone"></ion-icon>
       </ion-thumbnail>
       <h1>{{item.titulo}}</h1>
     </ion-item>
