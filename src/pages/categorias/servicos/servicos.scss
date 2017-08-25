@@ -2,7 +2,7 @@
 
 }
 .icone{
-  font-size: 3em!important;
+  font-size:3em!important;
 }
 .thumb{
   margin:0!important;
@@ -10,34 +10,29 @@
   padding-top: 15px;
 }
 .item-lista{
-  height: 22vh;
-  background:  url("/assets/images/textura.jpg");
-  z-index: 1;
+  height: 23vh;
+}
+
+.margin-zero{
+  margin: 0;
 }
 .item-lista > div.item-inner{
   border: 0!important;
 }
 #cor1{
-  background-image: linear-gradient(to bottom right, #0b5534, #4dc39e);
-  opacity: .7;
-  z-index: 0;
+  background-image: url("/assets/images/fundo2.jpg");
   color: white;
 }
+
 #cor2{
-  background-image: linear-gradient(to bottom right, #555500, #c3bf28);
-  opacity: .7;
+  background-image: url("/assets/images/fundo3.jpg");
   color: white;
 }
 #cor3{
-  background-image: linear-gradient(to bottom right, #173055, #3563c3);
-  opacity: .7;
-
+  background-image: url("/assets/images/fundo4.jpg");
   color: white;
 }
 #cor4{
-  background-image: linear-gradient(to bottom right, #550e10, #a93031);
-  opacity: .7;
+  background-image: url("/assets/images/fundo5.jpg");
   color: white;
 }
-
-
