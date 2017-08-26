@@ -13,6 +13,9 @@
         "cordova-plugin-device": {
             "PACKAGE_NAME": "com.ionicframework.minervapocket110852"
         },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.ionicframework.minervapocket110852"
+        },
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.ionicframework.minervapocket110852"
         },

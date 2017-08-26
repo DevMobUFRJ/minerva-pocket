@@ -8,6 +8,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { CategoriasPage } from '../pages/categorias/categorias';
 import { NavegarPage } from '../pages/navegar/navegar';
 import { TabsPage } from '../pages/tabs/tabs';
+import { SobrePage } from '../pages/sidemenu/sobre/sobre';
+import { ContatoPage } from '../pages/sidemenu/contato/contato';
 
 import { AlimentacaoPage } from '../pages/categorias/alimentacao/alimentacao';
 import { AlimentacaoItemPage } from '../pages/categorias/alimentacao/alimentacao-item/alimentacao-item';
@@ -41,6 +43,15 @@ import { SecretariaItemPage } from '../pages/categorias/academico/secretaria/sec
 
 import { BdService } from './services/bd.service';
 
+import { Network } from '@ionic-native/network'
+import { ToastController } from 'ionic-angular';
+
+
+declare var navigator: any;
+declare var Connection: any;
+
+declare var isOnline: boolean;
+
 @Component({
   templateUrl: 'app.html',
     providers:[BdService]
@@ -57,14 +68,19 @@ export class MyApp {
     public platform: Platform,
     public menu: MenuController,
     public statusBar: StatusBar,
-    public splashScreen: SplashScreen
+    public splashScreen: SplashScreen,
+    public toast: ToastController,
+    public network: Network
   ) {
     this.initializeApp();
-
+    
     // set our app's pages
     this.pages = [
       { title: 'Categorias', component: CategoriasPage },
       { title: 'Navegar', component: NavegarPage },
+
+      { title: 'Sobre', component: SobrePage },
+      { title: 'Contato', component: ContatoPage },
 
       { title: 'Servicos', component: ServicosPage },
 
@@ -95,7 +111,7 @@ export class MyApp {
       { title: 'CaDaItemPage', component: CaDaItemPage },
       { title: 'SecretariaPage', component: SecretariaPage },
       { title: 'SecretariaItemPage', component: SecretariaItemPage },
-    ];
+    ]
   }
 
   initializeApp() {
@@ -106,7 +122,26 @@ export class MyApp {
       setTimeout(() => {
              this.splashScreen.hide();
            }, 100);
-         });
+
+      let networkState;
+
+      if(navigator.connection===null)
+        networkState = "offline";
+        else
+        networkState = "online";
+
+          this.displayNetworkUpdate(networkState)
+
+        }
+    )};
+
+
+
+    displayNetworkUpdate(connectionState:string){
+      this.toast.create({
+        message:`Você está ${connectionState}`,
+        duration:3000
+      }).present();
     }
 
   openPage(page) {

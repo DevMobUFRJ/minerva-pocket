@@ -1,9 +1,12 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+
 import { CategoriasPage } from '../pages/categorias/categorias';
 import { NavegarPage } from '../pages/navegar/navegar';
 import { TabsPage } from '../pages/tabs/tabs';
+import { SobrePage } from '../pages/sidemenu/sobre/sobre';
+import { ContatoPage } from '../pages/sidemenu/contato/contato';
 
 import { AlimentacaoPage } from '../pages/categorias/alimentacao/alimentacao';
 import { AlimentacaoItemPage } from '../pages/categorias/alimentacao//alimentacao-item/alimentacao-item';
@@ -37,6 +40,7 @@ import { SecretariaItemPage } from '../pages/categorias/academico/secretaria/sec
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Network } from '@ionic-native/network';
 
 import { AgmCoreModule } from '@agm/core';
 
@@ -46,6 +50,8 @@ import { AgmCoreModule } from '@agm/core';
     CategoriasPage,
     NavegarPage,
     TabsPage,
+    SobrePage,
+    ContatoPage,
 
     ServicosPage,
 
@@ -90,6 +96,8 @@ import { AgmCoreModule } from '@agm/core';
     CategoriasPage,
     NavegarPage,
     TabsPage,
+    SobrePage,
+    ContatoPage,
 
     ServicosPage,
 
@@ -124,7 +132,8 @@ import { AgmCoreModule } from '@agm/core';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Network
   ]
 })
 export class AppModule {}
