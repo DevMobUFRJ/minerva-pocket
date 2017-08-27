@@ -1,6 +1,9 @@
 .page-sevicos{
 
 }
+#tabs > page-servicos{
+  background: linear-gradient(#0ca383 10%, #00a550 50%);
+}
 .icone{
   font-size:3em!important;
 }
@@ -18,6 +21,7 @@
 }
 .item-lista > div.item-inner{
   border: 0!important;
+  background: transparentize(#494747, .1);
 }
 #cor1{
   background-image: url("/assets/images/fundo2.jpg");
