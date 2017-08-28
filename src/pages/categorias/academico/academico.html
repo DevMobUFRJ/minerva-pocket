@@ -7,10 +7,10 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item *ngFor="let item of itensLista" [navPush]="item.page" class="item-lista">
-      <ion-thumbnail item-right class="item-img">
-        <img class="thumbnail" src={{item.imagem}}>
+  <ion-list class="margin-zero">
+    <ion-item *ngFor="let item of itensLista" [navPush]="item.page" [id]="item.id" class="item-lista">
+      <ion-thumbnail item-left class="thumb">
+        <ion-icon [name]="item.name"  class="icone"></ion-icon>
       </ion-thumbnail>
       <h1>{{item.titulo}}</h1>
     </ion-item>
