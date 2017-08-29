@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
 import {InternoPage} from '../transporte/interno/interno';
 import {ExternoPage} from '../transporte/externo/externo';
 
