@@ -39,6 +39,11 @@ import { CaDaItemPage } from '../pages/categorias/academico/cada/cada-item/cada-
 import { SecretariaPage } from '../pages/categorias/academico/secretaria/secretaria';
 import { SecretariaItemPage } from '../pages/categorias/academico/secretaria/secretaria-item/secretaria-item';
 
+import { InfraestruturaPage } from '../pages/categorias/infraestrutura/infraestrutura';
+import { BanheiroPage } from '../pages/categorias/infraestrutura/banheiro/banheiro';
+import { BebedouroPage } from '../pages/categorias/infraestrutura/bebedouro/bebedouro';
+import { EstacionamentoPage } from '../pages/categorias/infraestrutura/estacionamento/estacionamento';
+
 import { BdService } from './services/bd.service';
 
 @Component({
@@ -95,6 +100,12 @@ export class MyApp {
       { title: 'CaDaItemPage', component: CaDaItemPage },
       { title: 'SecretariaPage', component: SecretariaPage },
       { title: 'SecretariaItemPage', component: SecretariaItemPage },
+
+      { title: 'InfraestruturaPage', component: InfraestruturaPage },
+      { title: 'BanheiroPage', component: BanheiroPage },
+      { title: 'BebedouroPage', component: BebedouroPage },
+      { title: 'EstacionamentoPage', component: EstacionamentoPage },
+
     ];
   }
 

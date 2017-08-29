@@ -38,6 +38,11 @@ import { SecretariaItemPage } from '../pages/categorias/academico/secretaria/sec
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { InfraestruturaPage } from '../pages/categorias/infraestrutura/infraestrutura';
+import { BanheiroPage } from '../pages/categorias/infraestrutura/banheiro/banheiro';
+import { BebedouroPage } from '../pages/categorias/infraestrutura/bebedouro/bebedouro';
+import { EstacionamentoPage } from '../pages/categorias/infraestrutura/estacionamento/estacionamento';
+
 import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
@@ -76,6 +81,11 @@ import { AgmCoreModule } from '@agm/core';
     CaDaItemPage,
     SecretariaPage,
     SecretariaItemPage,
+
+    InfraestruturaPage,
+    BanheiroPage,
+    BebedouroPage,
+    EstacionamentoPage,
 
   ],
   imports: [
@@ -120,6 +130,11 @@ import { AgmCoreModule } from '@agm/core';
     CaDaItemPage,
     SecretariaPage,
     SecretariaItemPage,
+
+    InfraestruturaPage,
+    BanheiroPage,
+    BebedouroPage,
+    EstacionamentoPage,
   ],
   providers: [
     StatusBar,

@@ -5,17 +5,6 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-<!--
-<ion-content>
-  <ion-list>
-    <ion-item *ngFor="let item of itensLista" [navPush]="item.page" class="item-lista">
-      <ion-thumbnail item-right class="item-img">
-        <img class="thumbnail" src={{item.imagem}}>
-      </ion-thumbnail>
-      <h1>{{item.titulo}}</h1>
-    </ion-item>
-  </ion-list>
-</ion-content> -->
 <ion-tabs id="tabs" tabsPlacement="top" tabsHighlight=true color="minerva">
   <ion-tab tabTitle="Interno" [root]="internoPage"></ion-tab>
   <ion-tab tabTitle="Externo" [root]="externoPage"></ion-tab>
