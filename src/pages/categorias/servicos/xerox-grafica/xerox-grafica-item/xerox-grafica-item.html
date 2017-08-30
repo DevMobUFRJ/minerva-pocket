@@ -49,7 +49,10 @@
                 [zoomControl]=false
                 [fullscreenControl]=true
                 >
-              <agm-marker [latitude]="toNumber(item[0].localizacao[0].latitude)" [longitude]="toNumber(item[0].localizacao[0].longitude)" [title]="item[0].nome">
+              <agm-marker [latitude]="toNumber(item[0].localizacao[0].latitude)" [longitude]="toNumber(item[0].localizacao[0].longitude)" 
+                [title]="item[0].nome"
+                iconUrl="http://i.imgur.com/BHUgXyv.png"
+                >
                 <agm-info-window>
                   <strong>{{item[0].nome}}</strong>
                 </agm-info-window>
