@@ -11,6 +11,7 @@ import {InternoItemPage} from './interno-item/interno-item';
 export class InternoPage {
 
   items:any;
+  pontos:any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private bdService: BdService) {
   }
