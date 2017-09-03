@@ -1,22 +1,44 @@
-<ion-menu [content]="content">
+<ion-menu [content]="content" >
 
-  <ion-header>
-    <ion-toolbar color="minerva">
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
+  <ion-header class="topo">
+    <img src="assets/images/minerva.png" class="perfil">
   </ion-header>
 
-  <ion-content>
-    <ion-list>
-      <button ion-item (click)="openPage(contatoPage)">
+  <ion-content class="conteudo">
+    <ion-list class="lista">
+      <ion-list-header class="titulo-lista">
+        Quem Somos
+      </ion-list-header>
+
+      <ion-item (click)="openPage(contatoPage)" class="itens">
+        <ion-icon name="mail" item-start></ion-icon>
         Contato
-      </button>
-      <button ion-item (click)="openPage(sobrePage)">
+      </ion-item>
+      <ion-item (click)="openPage(sobrePage)" class="itens">
+        <ion-icon name="contact" item-start></ion-icon>
         Sobre
-      </button>
+      </ion-item>
+    </ion-list>
+    <ion-list class="lista">
+      <ion-list-header class="titulo-lista">
+        Avalie
+      </ion-list-header>
+      <ion-item class="itens">
+        <ion-icon name="appstore" item-start></ion-icon>
+        Google Play
+      </ion-item>
+    </ion-list>
+    <ion-list class="lista">
+      <ion-list-header class="titulo-lista">
+        Contribua
+      </ion-list-header>
+      <ion-item (click)="openPage(contatoPage)" class="itens">
+        <ion-icon name="bulb" item-start></ion-icon>
+        Como podemos melhorar ?
+      </ion-item>
     </ion-list>
   </ion-content>
 
 </ion-menu>
 
-<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false" class="fundo"></ion-nav>

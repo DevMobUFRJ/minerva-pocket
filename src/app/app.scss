@@ -1,3 +1,42 @@
 agm-map {
       height: 300px;
     }
+.fundo{
+  background: grey;
+}
+.perfil{
+  width: 100px;
+}
+.topo{
+  height: 25vh;
+  margin-bottom: 3%;
+  padding-top: 7%;
+  text-align: center;
+  background-color: white;
+}
+.conteudo{
+  background:linear-gradient(155deg, #72ffc7 0%, #2c846d 90%);
+}
+.conteudo .fixed-content, .conteudo > div.scroll-content{
+  margin-top: 25vh!important;
+}
+
+.titulo-lista{
+  margin-top: 7px;
+  margin-bottom: 5px;
+  border: 0px;
+  color: #535d61;
+  font-weight: 500;
+}
+.itens .item-inner{
+  border: 0px!important;
+  padding-left: 20px!important;
+  color: ghostwhite;
+  font-weight: 500;
+}
+.lista > .item{
+  background: transparent;
+}
+.itens ion-icon{
+  margin-right: 8px;
+}
