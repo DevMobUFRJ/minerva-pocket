@@ -6,6 +6,7 @@
 *.log
 log.txt
 npm-debug.log*
+.vscode
 
 node_modules/
 temp/

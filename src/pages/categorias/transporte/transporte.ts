@@ -9,14 +9,16 @@ import {ExternoPage} from '../transporte/externo/externo';
 export class TransportePage {
   itensLista: any;
 
-  internoPage = InternoPage;
-  externoPage = ExternoPage;
+  internoPage: any;
+  externoPage: any;
 
   constructor() {
-
+    this.internoPage = InternoPage;
+    this.externoPage = ExternoPage;
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TransportePage');
   }
+  
 }

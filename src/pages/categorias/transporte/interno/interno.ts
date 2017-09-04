@@ -1,3 +1,4 @@
+import { CategoriasPage } from './../../categorias';
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
@@ -42,5 +43,9 @@ export class InternoPage {
       if(refresher != 0)
         refresher.complete();
     });
+  }
+
+  backButton(){
+    this.navCtrl.setRoot(CategoriasPage);
   }
 }

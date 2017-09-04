@@ -1,5 +1,5 @@
+import { CategoriasPage } from './../categorias/categorias';
 import { Component } from '@angular/core';
-import { CategoriasPage } from '../categorias/categorias';
 import { NavegarPage } from '../navegar/navegar';
 
 @Component({
