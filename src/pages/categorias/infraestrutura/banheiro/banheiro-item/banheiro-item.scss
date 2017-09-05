@@ -1,0 +1,44 @@
+page-banheiro-item {
+
+  .scroll-content{
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+
+  .imagem-item{
+    position: absolute;
+    top:0px;
+    width: 120%;
+    height: 35vh;
+    // box-shadow:10px 10px 5px 5px pink inset;
+    -webkit-filter: grayscale(20%);
+    filter: grayscale(20%);
+    z-index: -2;
+  }
+
+  .sombra{
+    position: relative;
+    top: 0px;
+    margin-top: -3vh;
+    height:35vh;
+    box-shadow: inset 0vw 10vh 30vh -40px rgba(0, 0, 0, 0.8);
+  }
+
+  .titulo{
+    color: white;
+    margin-top: -6vh;
+    margin-left: 3vw;
+    font-size: 4vh;
+  }
+
+  ion-note{
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+  }
+
+  .item-inner{
+    margin: 0 15px;
+  }
+}
