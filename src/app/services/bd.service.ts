@@ -11,6 +11,7 @@ export class BdService{
     servicoUrl: String;
     alimentacaoUrl: String;
     transporteUrl: String;
+    infraestruturaUrl: String;
 
     constructor (http:Http){
       this.http = http;
@@ -18,6 +19,7 @@ export class BdService{
       this.academicoUrl = "http://aqueous-waters-67532.herokuapp.com/api/academico_api";
       this.servicoUrl = "http://aqueous-waters-67532.herokuapp.com/api/servico_api";
       this.transporteUrl = "http://aqueous-waters-67532.herokuapp.com/api/transporte_api";
+      this.infraestruturaUrl = "http://aqueous-waters-67532.herokuapp.com/api/infraestrutura_api";
     }
 
     getAlimentacaoData(){
@@ -36,4 +38,7 @@ export class BdService{
       return this.http.get(this.servicoUrl).map(res => res.json());
     }
 
+    getInfraestruturaData(){
+      return this.http.get(this.infraestruturaUrl).map(res => res.json());
+    }
 }

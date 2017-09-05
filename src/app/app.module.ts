@@ -1,3 +1,4 @@
+import { BebedouroItemPage } from './../pages/categorias/infraestrutura/bebedouro/bebedouro-item/bebedouro-item';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
@@ -43,6 +44,8 @@ import { BanheiroPage } from '../pages/categorias/infraestrutura/banheiro/banhei
 import { BebedouroPage } from '../pages/categorias/infraestrutura/bebedouro/bebedouro';
 import { EstacionamentoPage } from '../pages/categorias/infraestrutura/estacionamento/estacionamento';
 
+import { BanheiroItemPage } from './../pages/categorias/infraestrutura/banheiro/banheiro-item/banheiro-item';
+
 import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
@@ -86,6 +89,9 @@ import { AgmCoreModule } from '@agm/core';
     BanheiroPage,
     BebedouroPage,
     EstacionamentoPage,
+
+    BanheiroItemPage,
+    BebedouroItemPage,
 
   ],
   imports: [
@@ -135,6 +141,9 @@ import { AgmCoreModule } from '@agm/core';
     BanheiroPage,
     BebedouroPage,
     EstacionamentoPage,
+
+    BanheiroItemPage,
+    BebedouroItemPage,
   ],
   providers: [
     StatusBar,
