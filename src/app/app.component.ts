@@ -1,4 +1,3 @@
-import { BebedouroItemPage } from './../pages/categorias/infraestrutura/bebedouro/bebedouro-item/bebedouro-item';
 import { Component, ViewChild } from '@angular/core';
 
 import { Platform, MenuController, Nav } from 'ionic-angular';
@@ -44,8 +43,12 @@ import { InfraestruturaPage } from '../pages/categorias/infraestrutura/infraestr
 import { BanheiroPage } from '../pages/categorias/infraestrutura/banheiro/banheiro';
 import { BebedouroPage } from '../pages/categorias/infraestrutura/bebedouro/bebedouro';
 import { EstacionamentoPage } from '../pages/categorias/infraestrutura/estacionamento/estacionamento';
+import { BicicletarioPage } from '../pages/categorias/infraestrutura/bicicletario/bicicletario';
 
 import { BanheiroItemPage } from './../pages/categorias/infraestrutura/banheiro/banheiro-item/banheiro-item';
+import { BebedouroItemPage } from './../pages/categorias/infraestrutura/bebedouro/bebedouro-item/bebedouro-item';
+import { EstacionamentoItemPage } from './../pages/categorias/infraestrutura/estacionamento/estacionamento-item/estacionamento-item';
+import { BicicletarioItemPage } from './../pages/categorias/infraestrutura/bicicletario/bicicletario-item/bicicletario-item';
 
 import { BdService } from './services/bd.service';
 
@@ -108,9 +111,12 @@ export class MyApp {
       { title: 'BanheiroPage', component: BanheiroPage },
       { title: 'BebedouroPage', component: BebedouroPage },
       { title: 'EstacionamentoPage', component: EstacionamentoPage },
+      { title: 'BicicletarioPage', component: BicicletarioPage },
 
       { title: 'BanheiroItemPage', component: BanheiroItemPage },
       { title: 'BebedouroItemPage', component: BebedouroItemPage },
+      { title: 'EstacionamentoItemPage', component: EstacionamentoItemPage },
+      { title: 'BicicletarioItemPage', component: BicicletarioItemPage },
 
     ];
   }

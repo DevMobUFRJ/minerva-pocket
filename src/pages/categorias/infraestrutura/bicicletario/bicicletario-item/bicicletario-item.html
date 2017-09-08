@@ -1,0 +1,67 @@
+
+<ion-header no-border >
+
+  <ion-navbar color="transparente">
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="sombra">
+    <img alt="image" class="imagem-item">
+  </div>
+  <h1 class="titulo">{{item.nome}} - {{item.localizacao[0].centro}}</h1>
+  <ion-list no-padding>
+
+    <ion-item (click)="toggleDetails(tipo)">
+      Tipo de Infraestrutura
+      <ion-note item-right>
+        {{item.tipo}}
+      </ion-note>
+    </ion-item>
+
+    <ion-item (click)="toggleDetails(bandeira)">
+      Detalhes
+      <ion-note item-right>
+         {{item.detalhes}}
+      </ion-note>
+      </ion-item>
+
+    <ion-item ion-item (click)="toggleDetails(funcionamento)">
+      Situação
+      <ion-note item-right>
+        {{item.situacao}}
+      </ion-note>
+    </ion-item>
+
+    <ion-item (click)="toggleDetails(localizacao)">
+      Localização
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <agm-map [latitude]="toNumber(item.localizacao[0].latitude)" [longitude]="toNumber(item.localizacao[0].longitude)" [zoom]="17"
+                [panControl]=false
+                [scaleControl]=false
+                [mapTypeControl]=true
+                [scrollwheel]=false
+                [streetViewControl]=false
+                [zoomControl]=false
+                [fullscreenControl]=true
+                >
+                <agm-marker [latitude]="toNumber(item.localizacao[0].latitude)" [longitude]="toNumber(item.localizacao[0].longitude)" 
+                [title]="item.nome"
+                iconUrl="https://i.imgur.com/zqxJljT.png"
+                >
+                <agm-info-window>
+                  <strong>{{item.nome}}</strong>
+                </agm-info-window>
+              </agm-marker>
+            </agm-map>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

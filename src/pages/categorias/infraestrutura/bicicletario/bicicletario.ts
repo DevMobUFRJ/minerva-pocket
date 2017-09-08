@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 import { BdService } from '../../../../app/services/bd.service';
-import { EstacionamentoItemPage } from './estacionamento-item/estacionamento-item';
+import { BicicletarioItemPage } from './bicicletario-item/bicicletario-item';
 
 @Component({
-  selector: 'page-estacionamento',
-  templateUrl: 'estacionamento.html'
+  selector: 'page-bicicletario',
+  templateUrl: 'bicicletario.html'
 })
-export class EstacionamentoPage {
+export class BicicletarioPage {
 
   items: any;
 
@@ -17,7 +17,7 @@ export class EstacionamentoPage {
 
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad EstacionamentoPage');
+    console.log('ionViewDidLoad BicicletarioPage');
   }
 
   ngOnInit() {
@@ -27,17 +27,17 @@ export class EstacionamentoPage {
 
   getInfraestruturaData() {
     this.bdService.getInfraestruturaData().subscribe(response => {
-      this.items = response['2'];
+      this.items = response['3'];
     });
   }
 
   viewItem(item) {
-    this.navCtrl.push(EstacionamentoItemPage, { item: item })
+    this.navCtrl.push(BicicletarioItemPage, { item: item })
   }
 
   doRefresh(refresher) {
     this.bdService.getInfraestruturaData().subscribe(response => {
-      this.items = response['2'];
+      this.items = response['3'];
 
       if (refresher != 0)
         refresher.complete();

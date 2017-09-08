@@ -4,6 +4,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { BanheiroPage } from '../infraestrutura/banheiro/banheiro';
 import { BebedouroPage } from '../infraestrutura/bebedouro/bebedouro';
 import { EstacionamentoPage } from '../infraestrutura/estacionamento/estacionamento';
+import { BicicletarioPage } from '../infraestrutura/bicicletario/bicicletario';
 
 
 /*
@@ -22,12 +23,14 @@ export class InfraestruturaPage {
   bebedouroPage=BebedouroPage;
   banheiroPage=BanheiroPage;
   estacionamentoPage=EstacionamentoPage;
+  bicicletarioPage=BicicletarioPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.itensLista = [
-      {titulo:'Banheiros', imagem:'assets/images/academico/biblioteca.jpg', page:this.banheiroPage, name:'ios-man', id: 'fundo1'},
-      {titulo:'Bebedouros', imagem:'assets/images/academico/ca.jpg', page:this.bebedouroPage, name:'md-pint', id: 'fundo2'},
-      {titulo:'Estacionamentos', imagem:'assets/images/academico/auditorio.jpg', page:this.estacionamentoPage, name:'md-car', id: 'fundo3'},
+      {titulo:'Banheiros', page:this.banheiroPage, name:'ios-bulb', id: 'fundo1', class:'corrigeBanheiro'},
+      {titulo:'Bebedouros', page:this.bebedouroPage, name:'md-pint', id: 'fundo2'},
+      {titulo:'Estacionamentos', page:this.estacionamentoPage, name:'md-car', id: 'fundo3'},
+      {titulo:'Bicicletários', page:this.bicicletarioPage, name:'md-bicycle', id: 'fundo4'},
     ];
   }
 

@@ -1,4 +1,3 @@
-import { BebedouroItemPage } from './../pages/categorias/infraestrutura/bebedouro/bebedouro-item/bebedouro-item';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
@@ -43,8 +42,12 @@ import { InfraestruturaPage } from '../pages/categorias/infraestrutura/infraestr
 import { BanheiroPage } from '../pages/categorias/infraestrutura/banheiro/banheiro';
 import { BebedouroPage } from '../pages/categorias/infraestrutura/bebedouro/bebedouro';
 import { EstacionamentoPage } from '../pages/categorias/infraestrutura/estacionamento/estacionamento';
+import { BicicletarioPage } from '../pages/categorias/infraestrutura/bicicletario/bicicletario';
 
 import { BanheiroItemPage } from './../pages/categorias/infraestrutura/banheiro/banheiro-item/banheiro-item';
+import { BebedouroItemPage } from './../pages/categorias/infraestrutura/bebedouro/bebedouro-item/bebedouro-item';
+import { EstacionamentoItemPage } from './../pages/categorias/infraestrutura/estacionamento/estacionamento-item/estacionamento-item';
+import { BicicletarioItemPage } from './../pages/categorias/infraestrutura/bicicletario/bicicletario-item/bicicletario-item';
 
 import { AgmCoreModule } from '@agm/core';
 
@@ -89,9 +92,12 @@ import { AgmCoreModule } from '@agm/core';
     BanheiroPage,
     BebedouroPage,
     EstacionamentoPage,
+    BicicletarioPage,
 
     BanheiroItemPage,
     BebedouroItemPage,
+    EstacionamentoItemPage,
+    BicicletarioItemPage,
 
   ],
   imports: [
@@ -141,9 +147,12 @@ import { AgmCoreModule } from '@agm/core';
     BanheiroPage,
     BebedouroPage,
     EstacionamentoPage,
+    BicicletarioPage,
 
     BanheiroItemPage,
     BebedouroItemPage,
+    EstacionamentoItemPage,
+    BicicletarioItemPage,
   ],
   providers: [
     StatusBar,

@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-navbar color="minerva">
+        <ion-title>
+            Estacionamentos
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="Puxe para recarregar" refreshingSpinner="ios" refreshingText="Recarregando...">
+        </ion-refresher-content>
+    </ion-refresher>
+    <ion-list>
+        <ion-item *ngFor="let item of items" (click)="viewItem(item)">
+
+            <h2>{{item.nome}}</h2>
+        </ion-item>
+    </ion-list>
+</ion-content>
