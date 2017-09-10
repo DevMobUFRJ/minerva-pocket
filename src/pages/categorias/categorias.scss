@@ -1,38 +1,33 @@
 page-categorias {
-
-  .img-responsive{
-    // width:auto;
-    // height: 33%;
-    width: 110%;
-    margin-bottom: -4px;
-    height: 28vh;
-  }
-  .ocupatudo{
-    margin-bottom: -5px;
-  }
-  .texto{
-    position: absolute;
-    margin-top: -50px;
-    margin-left: 30px;
-    z-index: 1;
-    color: white;
-    font-size: 20px;
-    //font-weight: bold;
-  }
-  .scroll-content{
-    padding-top: 1px;
-    margin-bottom: -1px;
-    // margin-bottom: -7px;
-    //overflow: hidden;
-  }
-
-  .last-img{
-    min-height: 30vh;
-  }
-
-  ion-img.img-loaded img {
-    min-height: 30vh;
-  }
-
-
+    .img-responsive {
+        // width:auto;
+        // height: 33%;
+        width: 110%;
+        margin-bottom: -4px;
+        height: 28vh;
+    }
+    .ocupatudo {
+        margin-bottom: -5px;
+    }
+    .texto {
+        position: absolute;
+        margin-top: -50px;
+        margin-left: 30px;
+        z-index: 1;
+        color: white;
+        font-size: 20px;
+        //font-weight: bold;
+    }
+    .scroll-content {
+        padding-top: 1px;
+        margin-bottom: -1px;
+        // margin-bottom: -7px;
+        //overflow: hidden;
+    }
+    .last-img {
+        min-height: 30vh;
+    }
+    ion-img.img-loaded img {
+        min-height: 30vh;
+    }
 }
