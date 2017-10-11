@@ -49,6 +49,9 @@ import { BebedouroItemPage } from './../pages/categorias/infraestrutura/bebedour
 import { EstacionamentoItemPage } from './../pages/categorias/infraestrutura/estacionamento/estacionamento-item/estacionamento-item';
 import { BicicletarioItemPage } from './../pages/categorias/infraestrutura/bicicletario/bicicletario-item/bicicletario-item';
 
+import { ContatoPage } from '../pages/contato/contato';
+import { SobrePage } from '../pages/sobre/sobre';
+
 import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
@@ -98,6 +101,9 @@ import { AgmCoreModule } from '@agm/core';
     BebedouroItemPage,
     EstacionamentoItemPage,
     BicicletarioItemPage,
+
+    ContatoPage,
+    SobrePage
 
   ],
   imports: [
@@ -153,6 +159,9 @@ import { AgmCoreModule } from '@agm/core';
     BebedouroItemPage,
     EstacionamentoItemPage,
     BicicletarioItemPage,
+    
+    ContatoPage,
+    SobrePage
   ],
   providers: [
     StatusBar,
@@ -160,4 +169,5 @@ import { AgmCoreModule } from '@agm/core';
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
-export class AppModule {}
+export class AppModule {
+}

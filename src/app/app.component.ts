@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 
-import { Platform, MenuController, Nav } from 'ionic-angular';
+import { Platform, MenuController, Nav} from 'ionic-angular';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -8,6 +8,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { CategoriasPage } from '../pages/categorias/categorias';
 import { NavegarPage } from '../pages/navegar/navegar';
 import { TabsPage } from '../pages/tabs/tabs';
+
 
 import { AlimentacaoPage } from '../pages/categorias/alimentacao/alimentacao';
 import { AlimentacaoItemPage } from '../pages/categorias/alimentacao/alimentacao-item/alimentacao-item';
@@ -50,27 +51,41 @@ import { BebedouroItemPage } from './../pages/categorias/infraestrutura/bebedour
 import { EstacionamentoItemPage } from './../pages/categorias/infraestrutura/estacionamento/estacionamento-item/estacionamento-item';
 import { BicicletarioItemPage } from './../pages/categorias/infraestrutura/bicicletario/bicicletario-item/bicicletario-item';
 
+import { ContatoPage } from '../pages/contato/contato';
+import { SobrePage } from '../pages/sobre/sobre';
+
 import { BdService } from './services/bd.service';
 
 @Component({
   templateUrl: 'app.html',
-    providers:[BdService]
+  providers:[BdService]
   })
 
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-
+  
   // make HelloIonicPage the root (or first) page
   rootPage: any = TabsPage;
   pages: Array<{title: string, component: any}>;
-
+  sidepages: Array<{title: string, icon:string, component: any}>;
+  ideias: Array<{ title: string, icon: string, component: any}>;
+  
   constructor(
     public platform: Platform,
     public menu: MenuController,
     public statusBar: StatusBar,
-    public splashScreen: SplashScreen
+    public splashScreen: SplashScreen,
+
   ) {
     this.initializeApp();
+
+    this.sidepages = [
+      { title: 'Contato', icon:"md-mail", component: ContatoPage },
+      { title: 'Sobre', icon: "logo-android", component: SobrePage }
+    ];
+    this.ideias = [
+      { title: 'Contato', icon:"bulb", component: ContatoPage },
+    ];
 
     // set our app's pages
     this.pages = [
@@ -117,6 +132,8 @@ export class MyApp {
       { title: 'BebedouroItemPage', component: BebedouroItemPage },
       { title: 'EstacionamentoItemPage', component: EstacionamentoItemPage },
       { title: 'BicicletarioItemPage', component: BicicletarioItemPage },
+      
+      
 
     ];
   }
@@ -136,7 +153,7 @@ export class MyApp {
     // close the menu when clicking a link from the menu
     this.menu.close();
     // navigate to the new page if it is not the current page
-    this.nav.setRoot(page.component);
+    this.nav.push(page.component);
   }
 
 }

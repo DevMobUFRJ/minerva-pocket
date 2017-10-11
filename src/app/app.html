@@ -1,4 +1,4 @@
-<ion-menu [content]="content" >
+<ion-menu [content]="content">
 
   <ion-header class="topo">
     <img src="assets/images/minerva.png" class="perfil">
@@ -6,18 +6,16 @@
 
   <ion-content class="conteudo">
     <ion-list class="lista">
+
       <ion-list-header class="titulo-lista">
         Quem Somos
       </ion-list-header>
 
-      <ion-item (click)="openPage(contatoPage)" class="itens">
-        <ion-icon name="mail" item-start></ion-icon>
-        Contato
+      <ion-item *ngFor="let p of sidepages" (click)="openPage(p)" class="itens">
+        <ion-icon [name]=p.icon item-start></ion-icon>
+        {{p.title}}
       </ion-item>
-      <ion-item (click)="openPage(sobrePage)" class="itens">
-        <ion-icon name="contact" item-start></ion-icon>
-        Sobre
-      </ion-item>
+
     </ion-list>
     <ion-list class="lista">
       <ion-list-header class="titulo-lista">
@@ -32,7 +30,7 @@
       <ion-list-header class="titulo-lista">
         Contribua
       </ion-list-header>
-      <ion-item (click)="openPage(contatoPage)" class="itens">
+      <ion-item *ngFor="let p of ideias" (click)="openPage(p)" class="itens">
         <ion-icon name="bulb" item-start></ion-icon>
         Como podemos melhorar ?
       </ion-item>
