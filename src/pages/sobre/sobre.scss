@@ -1,0 +1,26 @@
+page-sobre {
+    .logo-minerva img {
+        height: 100%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        margin: 0 auto;
+    }
+    .topo-sobre {
+        text-align: center;
+        color: grey;
+        background-color: #eeeeee;
+        padding-bottom: 4%;
+    }
+    .conteudo-sobre {
+        margin: 1% 5%;
+        background: white;
+    }
+    .titulo {
+        color: #2CB893;
+        margin: 2% 0;
+        padding: 0;
+    }
+    .descricao {
+        color: #7F8081;
+    }
+}

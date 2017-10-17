@@ -1,41 +1,42 @@
 <ion-menu [content]="content">
 
-  <ion-header class="topo">
-    <img src="assets/images/minerva.png" class="perfil">
-  </ion-header>
+    <ion-header class="topo">
+        <img src="assets/images/minerva.png" class="perfil">
+    </ion-header>
 
-  <ion-content class="conteudo">
-    <ion-list class="lista">
+    <ion-content class="conteudo">
+        <ion-list class="lista">
 
-      <ion-list-header class="titulo-lista">
-        Quem Somos
-      </ion-list-header>
+            <ion-list-header class="titulo-lista">
+                Quem Somos
+            </ion-list-header>
 
-      <ion-item *ngFor="let p of sidepages" (click)="openPage(p)" class="itens">
-        <ion-icon [name]=p.icon item-start></ion-icon>
-        {{p.title}}
-      </ion-item>
+            <ion-item *ngFor="let p of sidepages" (click)="openPage(p)" class="itens">
+                <ion-icon [name]=p.icon item-start></ion-icon>
+                {{p.title}}
+            </ion-item>
+        </ion-list>
 
-    </ion-list>
-    <ion-list class="lista">
-      <ion-list-header class="titulo-lista">
-        Avalie
-      </ion-list-header>
-      <ion-item class="itens">
-        <ion-icon name="appstore" item-start></ion-icon>
-        Google Play
-      </ion-item>
-    </ion-list>
-    <ion-list class="lista">
-      <ion-list-header class="titulo-lista">
-        Contribua
-      </ion-list-header>
-      <ion-item *ngFor="let p of ideias" (click)="openPage(p)" class="itens">
-        <ion-icon name="bulb" item-start></ion-icon>
-        Como podemos melhorar ?
-      </ion-item>
-    </ion-list>
-  </ion-content>
+        <ion-list class="lista">
+            <ion-list-header class="titulo-lista">
+                Avalie
+            </ion-list-header>
+            <ion-item class="itens">
+                <ion-icon name="appstore" item-start></ion-icon>
+                Google Play
+            </ion-item>
+        </ion-list>
+
+        <ion-list class="lista">
+            <ion-list-header class="titulo-lista">
+                Contribua
+            </ion-list-header>
+            <ion-item *ngFor="let p of ideias" (click)="openPage(p)" class="itens">
+                <ion-icon name="bulb" item-start></ion-icon>
+                Como podemos melhorar ?
+            </ion-item>
+        </ion-list>
+    </ion-content>
 
 </ion-menu>
 

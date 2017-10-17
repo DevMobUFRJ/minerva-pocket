@@ -81,7 +81,7 @@ export class MyApp {
 
     this.sidepages = [
       { title: 'Contato', icon:"md-mail", component: ContatoPage },
-      { title: 'Sobre', icon: "logo-android", component: SobrePage }
+      { title: 'Sobre', icon: "md-contact", component: SobrePage }
     ];
     this.ideias = [
       { title: 'Contato', icon:"bulb", component: ContatoPage },

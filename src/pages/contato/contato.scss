@@ -1,0 +1,39 @@
+.logo-devMob {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+page-contato {
+    .logo-devMob img {
+        height: 100%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        margin: 0 auto;
+    }
+    .conteudo-contato {
+        margin: 1% 5%;
+        background: white;
+    }
+    .titulo {
+        color: #2CB893;
+        margin: 2% 0;
+        padding: 0;
+    }
+    .descricao {
+        color: #7F8081;
+    }
+    .contatos ion-icon {
+        color: #2CB893;
+        font-size: 24px;
+    }
+    .contatos span {
+        color: #7F8081;
+        margin-bottom: 5px;
+        margin-left: 3px;
+    }
+    .contatos p {
+        white-space: pre;
+    }
+}
