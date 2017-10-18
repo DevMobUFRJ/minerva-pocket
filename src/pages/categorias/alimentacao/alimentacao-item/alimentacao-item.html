@@ -14,35 +14,16 @@
   <h1 class="titulo">{{item[0].nome}}</h1>
   <ion-list no-padding>
 
-    <ion-item (click)="toggleDetails(tipo_de_comida)">
-      Tipo de Comida
-      <ion-note item-right>
-        {{item[0].tipo_de_comida}}
+    <ion-item *ngFor="let d of detalhes; let i=index" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">
+       {{d.titulo}}
+        <ion-icon color="success" item-right [name]="isGroupShown(i)"></ion-icon>       
+      <ion-note item-right *ngIf="!isGroupShown(i)">
+         {{d.detalhe}}
       </ion-note>
+      <div *ngIf="isGroupShown(i)">{{d.detalhe}}</div>
     </ion-item>
 
-    <ion-item (click)="toggleDetails(preco)">
-      Preços
-      <ion-note item-right>
-        {{item[0].preco}}
-      </ion-note>
-    </ion-item>
-
-    <ion-item (click)="toggleDetails(pagamento)">
-      Pagamento
-      <ion-note item-right>
-         {{item[0].tipo_de_pagamento}}
-      </ion-note>
-      </ion-item>
-
-    <ion-item ion-item (click)="toggleDetails(funcionamento)">
-      Funcionamento
-      <ion-note item-right>
-        {{item[0].funcionamento}}
-      </ion-note>
-    </ion-item>
-
-    <ion-item (click)="toggleDetails(localizacao)">
+    <ion-item>
       Localização
       <ion-grid>
         <ion-row>
