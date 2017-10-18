@@ -27,5 +27,26 @@ page-sobre {
     }
     .descricao {
         color: #7F8081;
+        text-align: justify;
+    }
+    h4{
+        color: #808080;
+    }
+    .equipe ion-icon {
+        color: #2CB893;
+        font-size: 24px;
+    }
+    .equipe span {
+        color: #7F8081;
+        margin-bottom: 5px;
+        margin-left: 3px;
+    }
+    .equipe p{
+        margin-left: 5%;
+        margin-top: 2%;
+        display: none;
+    }
+    .equipe ion-item:focus p{
+        display:block;
     }
 }
