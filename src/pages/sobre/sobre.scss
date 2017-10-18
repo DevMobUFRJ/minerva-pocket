@@ -1,6 +1,10 @@
 page-sobre {
+    .logo-minerva {
+        min-width: 100px;
+        min-height: 100px;
+    }
     .logo-minerva img {
-        height: 100%;
+        width: 100%;
         padding-top: 3%;
         padding-bottom: 3%;
         margin: 0 auto;
@@ -9,7 +13,9 @@ page-sobre {
         text-align: center;
         color: grey;
         background-color: #eeeeee;
+        padding-top: 4%;
         padding-bottom: 4%;
+        width: 100%;
     }
     .conteudo-sobre {
         margin: 1% 5%;
@@ -17,7 +23,6 @@ page-sobre {
     }
     .titulo {
         color: #2CB893;
-        margin: 2% 0;
         padding: 0;
     }
     .descricao {
