@@ -33,12 +33,21 @@ page-alimentacao-item {
 
   ion-note{
     white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
   }
 
   .item-inner{
     margin: 0 15px;
+  }
+  .titulo-item:visited{
+    font-weight: bold;
+  }
+  .descricao-item{
+    text-align: right;
+    color: rgb(185, 184, 184);
+    font-weight: 500;
+    font-size: 15px;
   }
 }

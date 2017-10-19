@@ -142,7 +142,7 @@ export class MyApp {
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      this.statusBar.backgroundColorByHexString('#01994a');
+      this.statusBar.backgroundColorByHexString('#2CB893');
       setTimeout(() => {
              this.splashScreen.hide();
            }, 100);
