@@ -20,11 +20,7 @@ export class AlimentacaoItemPage {
           { titulo: "Funcionamento", detalhe: this.item[0].funcionamento },
         ]
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad AlimentacaoItemPage');
-  }
-
+  
   toggleGroup(group) {
     if (this.isGroupShown(group)) {
       this.shownGroup = null;
@@ -35,6 +31,10 @@ export class AlimentacaoItemPage {
   isGroupShown(group) {
     return this.shownGroup === group;
   };
+  
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad AlimentacaoItemPage');
+  }
 
   toNumber( LocArray:any ){
     return parseFloat(LocArray);

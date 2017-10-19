@@ -19,6 +19,8 @@
       "proxyUrl": "http://aqueous-waters-67532.herokuapp.com/api/servico_api"
     }
   ],
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
