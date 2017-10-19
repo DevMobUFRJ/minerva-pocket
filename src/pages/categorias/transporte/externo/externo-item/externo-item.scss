@@ -1,40 +1,55 @@
 page-externo-item {
 
-  .scroll-content{
+  .scroll-content {
     padding: 0px !important;
     margin: 0px !important;
   }
 
-  .imagem-item{
+  .imagem-item {
     position: absolute;
-    top:0px;
+    top: 0px;
     width: 120%;
-    height: 35vh;
-    // box-shadow:10px 10px 5px 5px pink inset;
+    height: 35vh; // box-shadow:10px 10px 5px 5px pink inset;
     -webkit-filter: grayscale(20%);
     filter: grayscale(20%);
     z-index: -2;
   }
 
-  .sombra{
+  .sombra {
     position: relative;
     top: 0px;
     margin-top: -3vh;
-    height:35vh;
+    height: 35vh;
     box-shadow: inset 0vw 10vh 30vh -40px rgba(0, 0, 0, 0.8);
   }
 
-  .titulo{
+  .titulo {
     color: white;
     margin-top: -6vh;
     margin-left: 3vw;
     font-size: 4vh;
   }
 
-  ion-note{
+  ion-note {
     white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
   }
+
+  .item-inner {
+    margin: 0 15px;
+  }
+
+  .titulo-item:visited {
+    font-weight: bold;
+  }
+
+  .descricao-item {
+    text-align: right;
+    color: rgb(185, 184, 184);
+    font-weight: 500;
+    font-size: 15px;
+  }
+
 }

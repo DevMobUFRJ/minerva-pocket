@@ -14,9 +14,9 @@ export class CaDaItemPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.item = navParams.get('item');
     this.detalhes = [
-      { titulo: "Contato", detalhe: this.item[0].contato },
-      { titulo: "Funcionamento", detalhe: this.item[0].funcionamento },
-      { titulo: "Observações", detalhe: this.item[0].observacao },
+      { titulo: "Funcionamento", detalhe: this.item.funcionamento },
+      { titulo: "Contato", detalhe: this.item.contato },
+      { titulo: "Observações", detalhe: this.item.observacao },
     ]
   }
 
