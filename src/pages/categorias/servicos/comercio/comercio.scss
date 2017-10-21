@@ -1,7 +1,11 @@
 page-comercio {
-
-  .scroll-content{
-    padding: 0 !important;
-  }
-
+    .scroll-content {
+        padding: 0 !important;
+    }
+    ion-item {
+        padding-left: 0px !important;
+    }
+    h2 {
+        padding-left: 16px;
+    }
 }
