@@ -14,9 +14,9 @@ export class InternoItemPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.item = navParams.get('item');
     this.detalhes = [
-      { titulo: "Tipo", detalhe: this.item[0].tipo },
-      { titulo: "Funcionamento", detalhe: this.item[0].funcionamento },
-      { titulo: "Observações", detalhe: this.item[0].observacao },
+      { titulo: "Tipo", detalhe: this.item.tipo },
+      { titulo: "Funcionamento", detalhe: this.item.funcionamento },
+      { titulo: "Observações", detalhe: this.item.observacao },
     ]
   }
 

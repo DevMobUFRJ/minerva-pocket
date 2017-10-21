@@ -1,12 +1,42 @@
- <!-- <ion-header no-shadow no-border>
+<ion-header no-border>
   <ion-navbar color="minerva">
     <ion-title>
-      Transporte
+      Transporte {{category}}
     </ion-title>
   </ion-navbar>
-</ion-header> -->
+</ion-header>
 
-<ion-tabs id="tabs" tabsPlacement="top" tabsHighlight=true color="minerva">
-  <ion-tab tabTitle="Interno" [root]="internoPage"></ion-tab>
-  <ion-tab tabTitle="Externo" [root]="externoPage"></ion-tab>
-</ion-tabs>
+<ion-content fullscreen>
+
+  <ion-segment [(ngModel)]="category">
+    <ion-segment-button value="Interno" (click)=getTransporteData(category)>
+      Interno
+    </ion-segment-button>
+    <ion-segment-button value="Externo" (click)=getTransporteData(category)>
+      Externo
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-content padding>
+    
+    <ion-refresher (ionRefresh)="doRefresh(category, $event)">
+      <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="Puxe para recarregar" refreshingSpinner="ios" refreshingText="Recarregando...">
+      </ion-refresher-content>
+    </ion-refresher> 
+  
+    <ion-list>
+      <div *ngIf="isInterno(category)">
+        <ion-item *ngFor="let item of Transporte.Interno['0']" (click)="viewItem(category, item)">
+          <h2>{{item.linha}}</h2>
+        </ion-item>
+      </div>
+
+      <div *ngIf="!isInterno(category)">
+        <ion-item *ngFor="let item of Transporte.Externo['0']" (click)="viewItem(category, item)">
+          <h2>{{item.linha}}</h2>
+        </ion-item>
+      </div>
+
+    </ion-list>
+  
+</ion-content>

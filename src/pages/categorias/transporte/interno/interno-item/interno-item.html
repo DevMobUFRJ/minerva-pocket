@@ -8,9 +8,9 @@
 
 <ion-content>
   <div class="sombra">
-    <img alt="image" class="imagem-item" src="{{item[0].imagem}}">
+    <img alt="image" class="imagem-item" src="{{item.imagem}}">
   </div>
-  <h1 class="titulo">{{item[0].linha}}</h1>
+  <h1 class="titulo">{{item.linha}}</h1>
   <ion-list no-padding>
 
     <ion-item *ngFor="let d of detalhes; let i=index" class="titulo-item" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">
@@ -26,24 +26,25 @@
       <ion-grid>
         <ion-row>
           <ion-col>
-            <agm-map [latitude]="toNumber(item[0].pontosQuePassa[0].latitude)" [longitude]="toNumber(item[0].pontosQuePassa[0].longitude)" [zoom]="14"
-                [panControl]=false
-                [scaleControl]=false
-                [mapTypeControl]=true
-                [scrollwheel]=false
-                [streetViewControl]=false
-                [zoomControl]=false
-                >
-              <div *ngFor="let ponto of item[0].pontosQuePassa">
+            <agm-map [latitude]="toNumber(item.pontosQuePassa[0].latitude)" [longitude]="toNumber(item.pontosQuePassa[0].longitude)"
+              [zoom]="14" 
+              [panControl]=false 
+              [scaleControl]=false 
+              [mapTypeControl]=true 
+              [scrollwheel]=false 
+              [streetViewControl]=false 
+              [zoomControl]=false
+              >
+              <div *ngFor="let ponto of item.pontosQuePassa">
                 <agm-marker [latitude]="toNumber(ponto.latitude)" [longitude]="toNumber(ponto.longitude)" 
-                [title]="ponto.nome"
+                [title]="ponto.nome" 
                 iconUrl="https://i.imgur.com/mitG9GF.png"
                 >
-                <agm-info-window>
-                  <strong>{{ponto.nome}}</strong>
-                </agm-info-window>
-              </agm-marker>
-            </div>
+                  <agm-info-window>
+                    <strong>{{ponto.nome}}</strong>
+                  </agm-info-window>
+                </agm-marker>
+              </div>
             </agm-map>
           </ion-col>
         </ion-row>
