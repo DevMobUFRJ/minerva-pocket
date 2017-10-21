@@ -30,7 +30,7 @@ export class TransportePage {
     else
       return false;
   }
-  ionViewWillEnter() {
+  ngOnInit() {
     this.getTransporteData(this.category);
   }
 
