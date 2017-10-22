@@ -11,7 +11,7 @@
   <div class="sombra">
     <img alt="image" class="imagem-item">
   </div>
-  <h1 class="titulo">{{item.nome}} - {{item.localizacao[0].centro}}</h1>
+  <h1 class="titulo">{{item.nome}}</h1>
   <ion-list no-padding>
 
     <ion-item *ngFor="let d of detalhes; let i=index" class="titulo-item" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">

@@ -14,6 +14,7 @@ export class BebedouroItemPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
         this.item = navParams.get('item');
         this.detalhes = [
+          { titulo: "Centro", detalhe: this.item.localizacao[0].centro },
           { titulo: "Tipo de Infraestrutura", detalhe: this.item.tipo },
           { titulo: "Detalhes", detalhe: this.item.detalhes },
           { titulo: "Situação", detalhe: this.item.situacao }
