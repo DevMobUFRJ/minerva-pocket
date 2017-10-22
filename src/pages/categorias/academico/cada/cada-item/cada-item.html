@@ -27,7 +27,7 @@
                 <ion-row>
                     <ion-col>
                         <agm-map [latitude]="toNumber(item.localizacao[0].latitude)" [longitude]="toNumber(item.localizacao[0].longitude)" [zoom]="17" [panControl]=false [scaleControl]=false [mapTypeControl]=true [scrollwheel]=false [streetViewControl]=false [zoomControl]=false
-                            [fullscreenControl]=true>
+                            [fullscreenControl]=false>
                             <agm-marker [latitude]="toNumber(item.localizacao[0].latitude)" [longitude]="toNumber(item.localizacao[0].longitude)" [title]="item.nome" iconUrl="https://i.imgur.com/MLV49xp.png">
                                 <agm-info-window>
                                     <strong>{{item.nome}}</strong>

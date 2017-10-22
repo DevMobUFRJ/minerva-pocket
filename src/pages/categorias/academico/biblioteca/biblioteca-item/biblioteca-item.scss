@@ -8,7 +8,6 @@ page-biblioteca-item {
         top: 0px;
         width: 120%;
         height: 35vh;
-        // box-shadow:10px 10px 5px 5px pink inset;
         -webkit-filter: grayscale(20%);
         filter: grayscale(20%);
         z-index: -2;
@@ -34,14 +33,22 @@ page-biblioteca-item {
     }
     .item-inner {
         margin: 0 15px;
+        padding-right: 0px!important;
     }
-    .titulo-item:visited {
-        font-weight: bold;
+    .titulo-item {
+        padding-left: 0;
     }
     .descricao-item {
         text-align: right;
         color: rgb(185, 184, 184);
         font-weight: 500;
         font-size: 15px;
+    }
+    .mapa ion-label {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .mapa ion-grid {
+        padding: 5px 0;
     }
 }
