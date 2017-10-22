@@ -1,19 +1,18 @@
 <ion-header>
-  <ion-navbar color="minerva">
-    <ion-title>
-      Serviços
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar color="minerva">
+        <ion-title>
+            Serviços
+        </ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content>
-<ion-list class="margin-zero">
-    <ion-item *ngFor="let item of itensLista" [navPush]="item.page" [id]="item.id" class="item-lista">
-      <ion-thumbnail item-left class="thumb" >
-        <!-- <img class="thumbnail" src={{item.imagem}}> -->
-        <ion-icon [name]="item.name"  class="icone"></ion-icon>
-      </ion-thumbnail>
-      <h1>{{item.titulo}}</h1>
-    </ion-item>
-  </ion-list>
+    <ion-list class="margin-zero">
+        <ion-item *ngFor="let item of itensLista" [navPush]="item.page" [id]="item.id" class="item-lista">
+            <ion-thumbnail item-left class="thumb">
+                <ion-icon [name]="item.name" class="icone"></ion-icon>
+            </ion-thumbnail>
+            <h1 class="titulo">{{item.titulo}}</h1>
+        </ion-item>
+    </ion-list>
 </ion-content>

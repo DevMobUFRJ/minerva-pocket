@@ -1,54 +1,43 @@
+<ion-header no-border>
 
-<ion-header no-border >
-
-  <ion-navbar color="transparente">
-  </ion-navbar>
+    <ion-navbar color="transparente">
+    </ion-navbar>
 
 </ion-header>
 
 
 <ion-content>
-  <div class="sombra">
-    <img alt="image" class="imagem-item" src="{{item[0].imagem}}">
-  </div>
-  <h1 class="titulo">{{item[0].nome}}</h1>
-  <ion-list no-padding>
+    <div class="sombra">
+        <img alt="image" class="imagem-item" src="{{item[0].imagem}}">
+    </div>
+    <h1 class="titulo">{{item[0].nome}}</h1>
+    <ion-list no-padding>
 
-    <ion-item *ngFor="let d of detalhes; let i=index" class="titulo-item" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">
-       {{d.titulo}}       
-      <ion-note item-right *ngIf="!isGroupShown(i)">
-         {{d.detalhe}}
-      </ion-note>
-      <div class="descricao-item" *ngIf="isGroupShown(i)">{{d.detalhe}}</div>
-    </ion-item>
+        <ion-item *ngFor="let d of detalhes; let i=index" class="titulo-item" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">
+            {{d.titulo}}
+            <ion-note item-right *ngIf="!isGroupShown(i)">
+                {{d.detalhe}}
+            </ion-note>
+            <div class="descricao-item" *ngIf="isGroupShown(i)">{{d.detalhe}}</div>
+        </ion-item>
 
-    <ion-item>
-      Localização
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <agm-map [latitude]="toNumber(item[0].localizacao[0].latitude)" [longitude]="toNumber(item[0].localizacao[0].longitude)" [zoom]="17"
-                [panControl]=false
-                [scaleControl]=false
-                [mapTypeControl]=true
-                [scrollwheel]=false
-                [streetViewControl]=false
-                [zoomControl]=false
-                >
-              <agm-marker [latitude]="toNumber(item[0].localizacao[0].latitude)" [longitude]="toNumber(item[0].localizacao[0].longitude)" 
-                [title]="item[0].nome"
-                iconUrl="https://i.imgur.com/XCDMvyG.png"
-                >
-                <agm-info-window>
-                  <strong>{{item[0].nome}}</strong>
-                  <p><a [href]="sanitize('http://maps.google.com/maps?q=loc:' + item[0].localizacao[0].latitude + ',' + item[0].localizacao[0].longitude)"> Veja no mapa </a></p>
-                </agm-info-window>
-              </agm-marker>
-            </agm-map>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-item>
+        <ion-item class="titulo-item mapa">
+            Localização
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <agm-map [latitude]="toNumber(item[0].localizacao[0].latitude)" [longitude]="toNumber(item[0].localizacao[0].longitude)" [zoom]="17" [panControl]=false [scaleControl]=false [mapTypeControl]=true [scrollwheel]=false [streetViewControl]=false [zoomControl]=false>
+                            <agm-marker [latitude]="toNumber(item[0].localizacao[0].latitude)" [longitude]="toNumber(item[0].localizacao[0].longitude)" [title]="item[0].nome" iconUrl="https://i.imgur.com/XCDMvyG.png">
+                                <agm-info-window>
+                                    <strong>{{item[0].nome}}</strong>
+                                    <p><a [href]="sanitize('http://maps.google.com/maps?q=loc:' + item[0].localizacao[0].latitude + ',' + item[0].localizacao[0].longitude)"> Veja no mapa </a></p>
+                                </agm-info-window>
+                            </agm-marker>
+                        </agm-map>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-item>
 
-  </ion-list>
+    </ion-list>
 </ion-content>
