@@ -31,7 +31,9 @@ export class OutroPage {
   }
 
   viewItem(item){
-    this.navCtrl.push(OutroItemPage, {item:item})
+    this.navCtrl.push(OutroItemPage, {item:item});
+    console.log(item)
+    
   }
 
   doRefresh(refresher){

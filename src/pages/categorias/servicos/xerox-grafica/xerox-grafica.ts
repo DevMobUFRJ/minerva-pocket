@@ -31,7 +31,8 @@ export class XeroxGraficaPage {
   }
 
   viewItem(item){
-    this.navCtrl.push(XeroxGraficaItemPage, {item:item})
+    this.navCtrl.push(XeroxGraficaItemPage, {item:item});
+    console.log(item)
   }
 
   doRefresh(refresher){

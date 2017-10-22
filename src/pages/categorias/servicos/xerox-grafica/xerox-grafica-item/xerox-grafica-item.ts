@@ -14,7 +14,7 @@ export class XeroxGraficaItemPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.item = navParams.get('item');
     this.detalhes = [
-      { titulo: "Serviço", detalhe: this.item[0].tipo },
+      { titulo: "Serviço", detalhe: this.item[0].servico },
       { titulo: "Observação", detalhe: this.item[0].observacao },
       { titulo: "Funcionamento", detalhe: this.item[0].funcionamento }
     ]
