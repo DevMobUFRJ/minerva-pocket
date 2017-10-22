@@ -16,7 +16,6 @@ export class OutroItemPage {
     this.detalhes = [
       { titulo: "Serviço", detalhe: this.item[0].servico },
       { titulo: "Observação", detalhe: this.item[0].observacao },
-      { titulo: "Descrição", detalhe: this.item[0].descricao },
       { titulo: "Funcionamento", detalhe: this.item[0].funcionamento }
     ]
   }
