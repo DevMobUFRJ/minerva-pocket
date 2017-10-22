@@ -42,9 +42,9 @@ export class TransportePage {
     });
 
     if (this.isInterno(category))
-      console.log(this.Transporte.Interno['0']);
+      console.log(this.Transporte.Interno);
     else
-      console.log(this.Transporte.Externo['0']);
+      console.log(this.Transporte.Externo);
 
   }
 
@@ -52,19 +52,18 @@ export class TransportePage {
     if (category == "Interno") {
       console.log("to interno");
       console.log(item);
-      this.navCtrl.push(InternoItemPage, {item:item})
+      this.navCtrl.push(InternoItemPage, {item:item[0]})
     }
     else if (category == "Externo"){
       console.log("to externo");
       console.log(item);
-      this.navCtrl.push(ExternoItemPage, { item: item })
+      this.navCtrl.push(ExternoItemPage, { item: item[0]})
     }
     
   }
 
   doRefresh(category, refresher) {
     console.log(category);
-    if (category == "Interno") {
       this.bdService.getTransporteData().subscribe(response => {
         this.Transporte.Interno = response['0'];
         this.Transporte.Externo = response['1'];
@@ -73,17 +72,7 @@ export class TransportePage {
           refresher.complete();
       });
     
-    } else if (category == "Externo"){
-      this.bdService.getTransporteData().subscribe(response => {
-        this.Transporte.Interno = response['0'];
-        this.Transporte.Externo = response['1'];
-        
-        if (refresher != 0)
-        refresher.complete();
-      });
-
     }
-  }    
     
   ionViewDidLoad() {
     console.log('ionViewDidLoad TransportePage');

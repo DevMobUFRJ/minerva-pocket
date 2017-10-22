@@ -26,14 +26,14 @@
   
     <ion-list>
       <div *ngIf="isInterno(category)">
-        <ion-item *ngFor="let item of Transporte.Interno['0']" (click)="viewItem(category, item)">
-          <h2>{{item.linha}}</h2>
+        <ion-item *ngFor="let item of Transporte.Interno" (click)="viewItem(category, item)">
+          <h2>{{item['0'].linha}}</h2>
         </ion-item>
       </div>
 
       <div *ngIf="!isInterno(category)">
-        <ion-item *ngFor="let item of Transporte.Externo['0']" (click)="viewItem(category, item)">
-          <h2>{{item.linha}}</h2>
+        <ion-item *ngFor="let item of Transporte.Externo" (click)="viewItem(category, item)">
+          <h2>{{item['0'].linha}}</h2>
         </ion-item>
       </div>
 
