@@ -41,6 +41,7 @@
                 >
                 <agm-info-window>
                   <strong>{{item[0].nome}}</strong>
+                  <p><a [href]="sanitize('http://maps.google.com/maps?q=loc:' + item[0].localizacao[0].latitude + ',' + item[0].localizacao[0].longitude)"> Veja no mapa </a></p>
                 </agm-info-window>
               </agm-marker>
             </agm-map>
