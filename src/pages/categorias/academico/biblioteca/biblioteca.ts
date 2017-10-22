@@ -31,7 +31,8 @@ export class BibliotecaPage {
   }
 
   viewItem(item){
-    this.navCtrl.push(BibliotecaItemPage, {item:item})
+    this.navCtrl.push(BibliotecaItemPage, {item:item});
+    console.log(item);
   }
 
   doRefresh(refresher){

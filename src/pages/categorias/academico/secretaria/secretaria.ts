@@ -31,7 +31,8 @@ export class SecretariaPage {
   }
 
   viewItem(item){
-    this.navCtrl.push(SecretariaItemPage, {item:item})
+    this.navCtrl.push(SecretariaItemPage, {item:item});
+    console.log(item);
   }
 
   doRefresh(refresher){

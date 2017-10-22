@@ -18,7 +18,7 @@
   <ion-list>
     <ion-item *ngFor="let item of items" (click)="viewItem(item)">
 
-      <h2>{{item.nome}}</h2>
+      <h2>{{item.nome}} - {{item.localizacao[0].centro}}</h2>
     </ion-item>
   </ion-list>
 </ion-content>

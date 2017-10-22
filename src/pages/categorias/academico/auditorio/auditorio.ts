@@ -31,7 +31,8 @@ export class AuditorioPage {
   }
 
   viewItem(item){
-    this.navCtrl.push(AuditorioItemPage, {item:item})
+    this.navCtrl.push(AuditorioItemPage, {item:item});
+    console.log(item);
   }
 
   doRefresh(refresher){
