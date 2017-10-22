@@ -15,8 +15,8 @@
       refreshingText="Recarregando...">
     </ion-refresher-content>
   </ion-refresher>
-  <ion-list>
-    <ion-item *ngFor="let item of items" (click)="viewItem(item)">
+  <ion-list [virtualScroll]="items" [approxItemHeight]=" '45px' " [bufferRatio]="3">
+    <ion-item *virtualItem="let item" (click)="viewItem(item)">
 
       <h2>{{item.nome}}</h2>
     </ion-item>

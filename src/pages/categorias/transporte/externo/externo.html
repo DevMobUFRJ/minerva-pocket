@@ -21,8 +21,8 @@
     </ion-refresher-content>
   </ion-refresher>
 
-  <ion-list>
-    <ion-item *ngFor="let item of items" (click)="viewItem(item)">
+  <ion-list [virtualScroll]="items" [approxItemHeight]=" '45px' " [bufferRatio]="3">
+    <ion-item *virtualItem="let item" (click)="viewItem(item)">
       <h2>{{item[0].linha}}</h2>
       
     </ion-item>

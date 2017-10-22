@@ -15,12 +15,14 @@
       refreshingText="Recarregando...">
     </ion-refresher-content>
     </ion-refresher>
-      <ion-list>
-        <ion-item *ngFor="let item of items" (click)="viewItem(item)">
+
+      <ion-list [virtualScroll]="items" [approxItemHeight]=" '80px' " [bufferRatio]="3">
+        <ion-item *virtualItem="let item" (click)="viewItem(item)">
           <ion-thumbnail item-right>
-            <img class="thumbnail" [src]="item[0].imagem">
+            <ion-img class="thumbnail" [src]="item[0].imagem"></ion-img>
           </ion-thumbnail>
           <h2>{{item[0].nome}}</h2>
         </ion-item>
       </ion-list>
+
 </ion-content>
