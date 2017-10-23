@@ -1,21 +1,28 @@
 page-alimentacao {
-  .item-inner{
-    padding-right: 0px!important;
-  }
-
-  .thumbnail{
-    width: 120px !important;
-  }
-
-  ion-thumbnail{
-    margin:0 !important;
-  }
-
-  ion-item{
-    padding-left: 0px !important;
-  }
-
-  h2{
-    padding-left: 16px;
-  }
+    .item-inner {
+        padding-right: 0px!important;
+        border: 0!important;
+    }
+    .thumbnail {
+        width: 120px !important;
+    }
+    img {
+        width: 100%!important;
+    }
+    ion-thumbnail {
+        margin: 0 !important;
+        height: 100%!important;
+    }
+    ion-img {
+        height: 100%!important;
+    }
+    ion-item {
+        padding-left: 0px !important;
+    }
+    h2 {
+        padding-left: 16px;
+    }
+    .input-wrapper {
+        border-bottom: 1px solid #dedede;
+    }
 }
