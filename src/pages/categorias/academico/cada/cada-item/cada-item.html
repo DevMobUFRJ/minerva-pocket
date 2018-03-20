@@ -29,8 +29,12 @@
                         <agm-map [latitude]="toNumber(item.localizacao[0].latitude)" [longitude]="toNumber(item.localizacao[0].longitude)" [zoom]="17" [panControl]=false [scaleControl]=false [mapTypeControl]=true [scrollwheel]=false [streetViewControl]=false [zoomControl]=false
                             [fullscreenControl]=false>
                             <agm-marker [latitude]="toNumber(item.localizacao[0].latitude)" [longitude]="toNumber(item.localizacao[0].longitude)" [title]="item.nome" iconUrl="https://i.imgur.com/MLV49xp.png">
-                                <agm-info-window>
+                                <agm-info-window  [isOpen]=true >
                                     <strong>{{item.nome}}</strong>
+                                    <p>
+                                        <a [href]="sanitize('http://maps.google.com/maps?q=loc:' + item.localizacao[0].latitude + ',' + item.localizacao[0].longitude)">
+                                        Abrir no mapa </a>
+                                    </p>
                                 </agm-info-window>
                             </agm-marker>
                         </agm-map>
