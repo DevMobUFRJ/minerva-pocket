@@ -31,6 +31,10 @@
                                 <agm-marker [latitude]="toNumber(ponto.latitude)" [longitude]="toNumber(ponto.longitude)" [title]="ponto.nome" iconUrl="https://i.imgur.com/mitG9GF.png">
                                     <agm-info-window>
                                         <strong>{{ponto.nome}}</strong>
+                                        <p>
+                                            <a [href]="sanitize('http://maps.google.com/maps?q=loc:' + ponto.latitude + ',' + ponto.longitude)">
+                                                Abrir no mapa </a>
+                                        </p>
                                     </agm-info-window>
                                 </agm-marker>
                             </div>
