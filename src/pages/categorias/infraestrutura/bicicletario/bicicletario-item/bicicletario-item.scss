@@ -51,4 +51,10 @@ page-bicicletario-item {
     .mapa ion-grid {
         padding: 5px 0;
     }
+    .button-inner {
+        border-radius: 50px;
+        -webkit-box-shadow: inset 0px 18px 103px -26px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: inset 0px 18px 103px -26px rgba(0, 0, 0, 0.35);
+        box-shadow: inset 0px 18px 103px -26px rgba(0, 0, 0, 0.35);
+    }
 }
