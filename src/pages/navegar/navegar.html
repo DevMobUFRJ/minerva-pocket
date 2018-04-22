@@ -9,6 +9,69 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Em Breve</h3>
+<ion-content>
+
+        <agm-map 
+          [latitude]="-22.857540" [longitude]="-43.233224"
+          [zoom]="15" [panControl]=false [scaleControl]=false [mapTypeControl]=true [scrollwheel]=false [streetViewControl]=false
+          [zoomControl]=false>
+          
+          <div *ngFor="let ponto of alimentacao">
+            <agm-marker [latitude]="toNumber(ponto[0].localizacao[0].latitude)" [longitude]="toNumber(ponto[0].localizacao[0].longitude)" [title]="ponto[0].nome" iconUrl="https://i.imgur.com/XCDMvyG.png">
+              <agm-info-window>
+                <strong>{{ponto[0].nome}}</strong>
+                <p>
+                  <a [href]="sanitize('http://maps.google.com/maps?q=loc:' + ponto[0].localizacao[0].latitude + ',' + ponto[0].localizacao[0].longitude)">
+                    Abrir no mapa </a>
+                </p>
+              </agm-info-window>
+            </agm-marker>
+          </div>
+
+          <div *ngFor="let ponto of xerox">
+            <agm-marker [latitude]="toNumber(ponto[0].localizacao[0].latitude)" [longitude]="toNumber(ponto[0].localizacao[0].longitude)" [title]="ponto[0].nome" iconUrl="https://i.imgur.com/kSfaukh.png">
+              <agm-info-window>
+                <strong>{{ponto[0].nome}}</strong>
+                <p>
+                  <a [href]="sanitize('http://maps.google.com/maps?q=loc:' + ponto[0].localizacao[0].latitude + ',' + ponto[0].localizacao[0].longitude)">
+                    Abrir no mapa </a>
+                </p>
+              </agm-info-window>
+            </agm-marker>
+          </div>
+
+          <div *ngFor="let ponto of banco">
+            <agm-marker [latitude]="toNumber(ponto[0].localizacao[0].latitude)" [longitude]="toNumber(ponto[0].localizacao[0].longitude)"
+              [title]="ponto[0].nome" iconUrl="https://i.imgur.com/GCJpQHs.png">
+              <agm-info-window>
+                <strong>{{ponto[0].nome}}</strong>
+                <p>
+                  <a [href]="sanitize('http://maps.google.com/maps?q=loc:' + ponto[0].localizacao[0].latitude + ',' + ponto[0].localizacao[0].longitude)">
+                    Abrir no mapa </a>
+                </p>
+              </agm-info-window>
+            </agm-marker>
+          </div>
+
+          <div *ngFor="let ponto of biblioteca">
+            <agm-marker [latitude]="toNumber(ponto.localizacao[0].latitude)" [longitude]="toNumber(ponto.localizacao[0].longitude)"
+              [title]="ponto.nome" iconUrl="https://i.imgur.com/KuPZYLz.png">
+              <agm-info-window>
+                <strong>{{ponto.nome}}</strong>
+                <p>
+                  <a [href]="sanitize('http://maps.google.com/maps?q=loc:' + ponto.localizacao[0].latitude + ',' + ponto.localizacao[0].longitude)">
+                    Abrir no mapa </a>
+                </p>
+              </agm-info-window>
+            </agm-marker>
+          </div>
+
+        </agm-map>
+
+        <ion-fab right bottom>
+          <button ion-fab mini color="dark" (click)="presentAlert()">
+            <ion-icon name="ios-help-circle-outline"></ion-icon>
+          </button>
+        </ion-fab>
+
 </ion-content>
