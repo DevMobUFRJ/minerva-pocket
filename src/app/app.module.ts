@@ -54,6 +54,9 @@ import { CopaItemPage } from './../pages/categorias/infraestrutura/copa/copa-ite
 import { ContatoPage } from '../pages/contato/contato';
 import { SobrePage } from '../pages/sobre/sobre';
 
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
+
 import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
@@ -114,7 +117,9 @@ import { AgmCoreModule } from '@agm/core';
     IonicModule.forRoot(MyApp,{tabsPlacement: 'top',tabsHideOnSubPages: true}),
     AgmCoreModule.forRoot({
         apiKey: 'AIzaSyAMYqI8gD4ulLJHXDZpAeUhPZ-NyLfNHEs'
-      })
+      }),
+    BrowserModule,
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
