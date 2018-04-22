@@ -34,6 +34,8 @@ import { CaDaPage } from '../pages/categorias/academico/cada/cada';
 import { CaDaItemPage } from '../pages/categorias/academico/cada/cada-item/cada-item';
 import { SecretariaPage } from '../pages/categorias/academico/secretaria/secretaria';
 import { SecretariaItemPage } from '../pages/categorias/academico/secretaria/secretaria-item/secretaria-item';
+import { MuseuPage } from '../pages/categorias/academico/museu/museu';
+import { MuseuItemPage } from '../pages/categorias/academico/museu/museu-item/museu-item';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -42,12 +44,12 @@ import { InfraestruturaPage } from '../pages/categorias/infraestrutura/infraestr
 import { BanheiroPage } from '../pages/categorias/infraestrutura/banheiro/banheiro';
 import { BebedouroPage } from '../pages/categorias/infraestrutura/bebedouro/bebedouro';
 import { EstacionamentoPage } from '../pages/categorias/infraestrutura/estacionamento/estacionamento';
-import { BicicletarioPage } from '../pages/categorias/infraestrutura/bicicletario/bicicletario';
+import { CopaPage } from '../pages/categorias/infraestrutura/copa/copa';
 
 import { BanheiroItemPage } from './../pages/categorias/infraestrutura/banheiro/banheiro-item/banheiro-item';
 import { BebedouroItemPage } from './../pages/categorias/infraestrutura/bebedouro/bebedouro-item/bebedouro-item';
 import { EstacionamentoItemPage } from './../pages/categorias/infraestrutura/estacionamento/estacionamento-item/estacionamento-item';
-import { BicicletarioItemPage } from './../pages/categorias/infraestrutura/bicicletario/bicicletario-item/bicicletario-item';
+import { CopaItemPage } from './../pages/categorias/infraestrutura/copa/copa-item/copa-item';
 
 import { ContatoPage } from '../pages/contato/contato';
 import { SobrePage } from '../pages/sobre/sobre';
@@ -90,17 +92,19 @@ import { AgmCoreModule } from '@agm/core';
     CaDaItemPage,
     SecretariaPage,
     SecretariaItemPage,
+    MuseuPage,
+    MuseuItemPage,
 
     InfraestruturaPage,
     BanheiroPage,
     BebedouroPage,
     EstacionamentoPage,
-    BicicletarioPage,
+    CopaPage,
 
     BanheiroItemPage,
     BebedouroItemPage,
     EstacionamentoItemPage,
-    BicicletarioItemPage,
+    CopaItemPage,
 
     ContatoPage,
     SobrePage
@@ -148,17 +152,19 @@ import { AgmCoreModule } from '@agm/core';
     CaDaItemPage,
     SecretariaPage,
     SecretariaItemPage,
+    MuseuPage,
+    MuseuItemPage,
 
     InfraestruturaPage,
     BanheiroPage,
     BebedouroPage,
     EstacionamentoPage,
-    BicicletarioPage,
+    CopaPage,
 
     BanheiroItemPage,
     BebedouroItemPage,
     EstacionamentoItemPage,
-    BicicletarioItemPage,
+    CopaItemPage,
     
     ContatoPage,
     SobrePage

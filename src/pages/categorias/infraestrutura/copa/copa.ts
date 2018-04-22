@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 import { BdService } from '../../../../app/services/bd.service';
-import { BicicletarioItemPage } from './bicicletario-item/bicicletario-item';
+import { CopaItemPage } from './copa-item/copa-item';
 
 @Component({
-  selector: 'page-bicicletario',
-  templateUrl: 'bicicletario.html'
+  selector: 'page-copa',
+  templateUrl: 'copa.html'
 })
-export class BicicletarioPage {
+export class CopaPage {
 
   items: any;
 
@@ -17,7 +17,7 @@ export class BicicletarioPage {
 
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BicicletarioPage');
+    console.log('ionViewDidLoad CopaPage');
   }
 
   ngOnInit() {
@@ -32,7 +32,7 @@ export class BicicletarioPage {
   }
 
   viewItem(item) {
-    this.navCtrl.push(BicicletarioItemPage, { item: item })
+    this.navCtrl.push(CopaItemPage, { item: item })
   }
 
   doRefresh(refresher) {

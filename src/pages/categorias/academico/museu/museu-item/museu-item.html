@@ -1,0 +1,47 @@
+<ion-header no-border>
+
+    <ion-navbar color="transparente">
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <div class="sombra">
+        <img alt="image" class="imagem-item" src="{{item.imagem}}">
+    </div>
+    <h1 class="titulo">{{item.nome}}</h1>
+    <ion-list no-padding>
+
+        <ion-item *ngFor="let d of detalhes; let i=index" class="titulo-item" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">
+            {{d.titulo}}
+            <ion-note item-right *ngIf="!isGroupShown(i)">
+                {{d.detalhe}}
+            </ion-note>
+            <div class="descricao-item" *ngIf="isGroupShown(i)">{{d.detalhe}}</div>
+        </ion-item>
+
+        <ion-item class="titulo-item mapa">
+            Localização
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <agm-map [latitude]="toNumber(item.localizacao[0].latitude)" [longitude]="toNumber(item.localizacao[0].longitude)" [zoom]="17" [panControl]=false [scaleControl]=false [mapTypeControl]=true [scrollwheel]=false [streetViewControl]=false [zoomControl]=false
+                            [fullscreenControl]=false>
+                            <agm-marker [latitude]="toNumber(item.localizacao[0].latitude)" [longitude]="toNumber(item.localizacao[0].longitude)" [title]="item.nome" iconUrl="https://i.imgur.com/hajsK3M.png">
+                                <agm-info-window  [isOpen]=true >
+                                    <strong>{{item.nome}}</strong>
+                                    <p>
+                                        <a [href]="sanitize('http://maps.google.com/maps?q=loc:' + item.localizacao[0].latitude + ',' + item.localizacao[0].longitude)">
+                                        Abrir no mapa </a>
+                                    </p>
+                                </agm-info-window>
+                            </agm-marker>
+                        </agm-map>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-item>
+
+    </ion-list>
+</ion-content>

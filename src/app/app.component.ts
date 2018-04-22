@@ -39,17 +39,19 @@ import { CaDaPage } from '../pages/categorias/academico/cada/cada';
 import { CaDaItemPage } from '../pages/categorias/academico/cada/cada-item/cada-item';
 import { SecretariaPage } from '../pages/categorias/academico/secretaria/secretaria';
 import { SecretariaItemPage } from '../pages/categorias/academico/secretaria/secretaria-item/secretaria-item';
+import { MuseuPage } from '../pages/categorias/academico/museu/museu';
+import { MuseuItemPage } from '../pages/categorias/academico/museu/museu-item/museu-item';
 
 import { InfraestruturaPage } from '../pages/categorias/infraestrutura/infraestrutura';
 import { BanheiroPage } from '../pages/categorias/infraestrutura/banheiro/banheiro';
 import { BebedouroPage } from '../pages/categorias/infraestrutura/bebedouro/bebedouro';
 import { EstacionamentoPage } from '../pages/categorias/infraestrutura/estacionamento/estacionamento';
-import { BicicletarioPage } from '../pages/categorias/infraestrutura/bicicletario/bicicletario';
+import { CopaPage } from '../pages/categorias/infraestrutura/copa/copa';
 
 import { BanheiroItemPage } from './../pages/categorias/infraestrutura/banheiro/banheiro-item/banheiro-item';
 import { BebedouroItemPage } from './../pages/categorias/infraestrutura/bebedouro/bebedouro-item/bebedouro-item';
 import { EstacionamentoItemPage } from './../pages/categorias/infraestrutura/estacionamento/estacionamento-item/estacionamento-item';
-import { BicicletarioItemPage } from './../pages/categorias/infraestrutura/bicicletario/bicicletario-item/bicicletario-item';
+import { CopaItemPage } from './../pages/categorias/infraestrutura/copa/copa-item/copa-item';
 
 import { ContatoPage } from '../pages/contato/contato';
 import { SobrePage } from '../pages/sobre/sobre';
@@ -121,17 +123,19 @@ export class MyApp {
       { title: 'CaDaItemPage', component: CaDaItemPage },
       { title: 'SecretariaPage', component: SecretariaPage },
       { title: 'SecretariaItemPage', component: SecretariaItemPage },
+      { title: 'MuseuPage', component: MuseuPage },
+      { title: 'MuseuItemPage', component: MuseuItemPage },
 
       { title: 'InfraestruturaPage', component: InfraestruturaPage },
       { title: 'BanheiroPage', component: BanheiroPage },
       { title: 'BebedouroPage', component: BebedouroPage },
       { title: 'EstacionamentoPage', component: EstacionamentoPage },
-      { title: 'BicicletarioPage', component: BicicletarioPage },
+      { title: 'CopaPage', component: CopaPage },
 
       { title: 'BanheiroItemPage', component: BanheiroItemPage },
       { title: 'BebedouroItemPage', component: BebedouroItemPage },
       { title: 'EstacionamentoItemPage', component: EstacionamentoItemPage },
-      { title: 'BicicletarioItemPage', component: BicicletarioItemPage },
+      { title: 'CopaItemPage', component: CopaItemPage },
       
       
 

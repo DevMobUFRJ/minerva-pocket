@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar color="minerva">
+    <ion-title>
+      Museus
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Puxe para recarregar"
+      refreshingSpinner="ios"
+      refreshingText="Recarregando...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-list [virtualScroll]="items" [approxItemHeight]=" '45px' " [bufferRatio]="3">
+    <ion-item *virtualItem="let item" (click)="viewItem(item)">
+
+      <h2>{{item.nome}}</h2>
+    </ion-item>
+  </ion-list>
+</ion-content>

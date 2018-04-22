@@ -3,10 +3,10 @@ import { NavController, NavParams } from 'ionic-angular';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
-  selector: 'page-bicicletario-item',
-  templateUrl: 'bicicletario-item.html'
+  selector: 'page-copa-item',
+  templateUrl: 'copa-item.html'
 })
-export class BicicletarioItemPage {
+export class CopaItemPage {
 
   item:any;
   shownGroup = null;
@@ -38,7 +38,7 @@ export class BicicletarioItemPage {
   };
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BicicletarioItemPage');
+    console.log('ionViewDidLoad CopaItemPage');
   }
 
   toNumber( LocArray:any ){
