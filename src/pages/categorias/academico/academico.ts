@@ -28,7 +28,7 @@ export class AcademicoPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.itensLista = [
-      {titulo:'Bibliotecas & Salas de Estudo', imagem:'assets/images/academico/biblioteca.jpg', page:this.bibliotecaPage, name:'ios-book', id: 'fundo1'},
+      {titulo:'Bibliotecas', imagem:'assets/images/academico/biblioteca.jpg', page:this.bibliotecaPage, name:'ios-book', id: 'fundo1'},
       {titulo:'CAs & DAs', imagem:'assets/images/academico/ca.jpg', page:this.cadaPage, name:'md-school', id: 'fundo2'},
       {titulo:'Auditórios', imagem:'assets/images/academico/auditorio.jpg', page:this.auditorioPage, name:'ios-quote', id: 'fundo3'},
       {titulo:'Secretarias', imagem:'assets/images/academico/secretaria.jpg', page:this.secretariaPage, name:'ios-call', id: 'fundo4'},
