@@ -4,9 +4,16 @@
       Alimentação
     </ion-title>
   </ion-navbar>
+  <ion-searchbar  [(ngModel)]="searchTerm" 
+                  (ionInput)="setFilteredItems()"
+                  animated=true
+                  placeholder="Pesquisar..."
+                  ></ion-searchbar>
 </ion-header>
 
 <ion-content>
+
+
   <ion-refresher (ionRefresh)="doRefresh($event)">
     <ion-refresher-content
       pullingIcon="arrow-dropdown"

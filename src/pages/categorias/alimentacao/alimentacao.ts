@@ -11,6 +11,8 @@ import {AlimentacaoItemPage} from './alimentacao-item/alimentacao-item';
 export class AlimentacaoPage {
 
   items:any;
+  result:any;
+  searchTerm: string = "";
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private bdService: BdService, public loadingController: LoadingController) {
     // let loader = this.loadingController.create({
@@ -20,18 +22,36 @@ export class AlimentacaoPage {
     // loader.present();
   }
 
+  ionViewDidEnter(){
+    this.getAlimentacaoData();
+    this.setFilteredItems();
+    console.log(this.items);
+    
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad AlimentacaoPage');
   }
 
   ngOnInit(){
     this.getAlimentacaoData();
-    console.log('foi...')
+    console.log('ngOnInit')
+  }
+
+  setFilteredItems() {
+    if(!this.searchTerm){
+      console.log('filtrando o vazio')
+      this.items = this.result;
+    } else {
+      console.log('filtrando resultados');
+      this.items = this.bdService.filterItems(this.items, this.searchTerm);
+    }
   }
 
   getAlimentacaoData(){
     this.bdService.getAlimentacaoData().subscribe(response => {
       this.items = response;
+      this.result = response;
     });
     console.log('carregando lugares de alimentacao')
   }
@@ -43,6 +63,7 @@ export class AlimentacaoPage {
   doRefresh(refresher){
     this.bdService.getAlimentacaoData().subscribe(response => {
       this.items = response;
+      this.result = response;
 
       if(refresher != 0)
          refresher.complete();

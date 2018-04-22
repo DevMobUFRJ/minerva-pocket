@@ -41,4 +41,17 @@ export class BdService{
     getInfraestruturaData(){
       return this.http.get(this.infraestruturaUrl).map(res => res.json());
     }
+
+    conjunction (x, y) {
+        return x & y
+    }
+
+    filterItems(items, searchTerm) {
+
+      return items.filter((item) => {
+        let resultado = item[0].nome.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1;
+        return resultado;
+      });
+
+    }
 }

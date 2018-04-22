@@ -62,6 +62,7 @@ import { AgmCoreModule } from '@agm/core';
 @NgModule({
   declarations: [
     MyApp,
+    
     CategoriasPage,
     NavegarPage,
     TabsPage,

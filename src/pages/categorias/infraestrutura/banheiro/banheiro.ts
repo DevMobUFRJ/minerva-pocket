@@ -17,6 +17,7 @@ export class BanheiroPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BanheiroPage');
+    
   }
 
   ngOnInit() {
