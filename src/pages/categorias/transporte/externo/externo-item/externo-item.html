@@ -13,13 +13,17 @@
     <h1 class="titulo">{{item.linha}}</h1>
     <ion-list no-padding>
 
-        <ion-item *ngFor="let d of detalhes; let i=index" class="titulo-item" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">
-            {{d.titulo}}
-            <ion-note item-right *ngIf="!isGroupShown(i)">
-                {{d.detalhe}}
-            </ion-note>
-            <div class="descricao-item" *ngIf="isGroupShown(i)">{{d.detalhe}}</div>
-        </ion-item>
+        <div *ngFor="let d of detalhes; let i=index">
+            <div *ngIf="d.detalhe != null">
+                <ion-item class="titulo-item" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">
+                    {{d.titulo}}
+                    <ion-note item-right *ngIf="!isGroupShown(i)">
+                        {{d.detalhe}}
+                    </ion-note>
+                    <div class="descricao-item" *ngIf="isGroupShown(i)">{{d.detalhe}}</div>
+                </ion-item>
+            </div>
+        </div>
 
         <ion-item class="titulo-item mapa">
             Pontos
