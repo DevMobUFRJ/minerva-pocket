@@ -21,7 +21,6 @@ export class OutroPage {
 
   ngOnInit(){
     this.getServicoData();
-    console.log('foi...')
   }
 
   getServicoData(){

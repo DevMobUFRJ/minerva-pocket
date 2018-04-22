@@ -18,7 +18,7 @@
   <ion-list [virtualScroll]="items" [approxItemHeight]=" '45px' " [bufferRatio]="3">
     <ion-item *virtualItem="let item" (click)="viewItem(item)">
 
-      <h2>{{item.nome}}</h2>
+      <h2>{{item.nome}} - {{item.localizacao[0].centro}}</h2>
     </ion-item>
   </ion-list>
 </ion-content>
