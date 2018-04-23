@@ -4,6 +4,7 @@
       Centros/Diretórios Acadêmicos
     </ion-title>
   </ion-navbar>
+  <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="setFilteredItems()" animated=true placeholder="Pesquisar..."></ion-searchbar>
 </ion-header>
 
 <ion-content padding>

@@ -11,8 +11,15 @@ import {CaDaItemPage} from './cada-item/cada-item';
 export class CaDaPage {
 
   items:any;
+  result: any;
+  searchTerm: string = "";
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private bdService: BdService) {
+  }
+
+  ionViewDidEnter() {
+    this.getAcademicoData();
+    this.setFilteredItems();
   }
 
   ionViewDidLoad() {
@@ -21,12 +28,21 @@ export class CaDaPage {
 
   ngOnInit(){
     this.getAcademicoData();
-    console.log('foi...')
+    console.log('ngOnInit')
+  }
+
+  setFilteredItems() {
+    if (!this.searchTerm) {
+      this.items = this.result;
+    } else {
+      this.items = this.bdService.filterItemsArray(this.result, this.searchTerm);
+    }
   }
 
   getAcademicoData(){
     this.bdService.getAcademicoData().subscribe(response => {
       this.items = response['0'];
+      this.result = response['0'];
     });
   }
 
@@ -37,6 +53,7 @@ export class CaDaPage {
   doRefresh(refresher){
     this.bdService.getAcademicoData().subscribe(response => {
       this.items = response['0'];
+      this.result = response['0'];
 
       if(refresher != 0)
         refresher.complete();

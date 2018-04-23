@@ -25,8 +25,6 @@ export class AlimentacaoPage {
   ionViewDidEnter(){
     this.getAlimentacaoData();
     this.setFilteredItems();
-    console.log(this.items);
-    
   }
 
   ionViewDidLoad() {
@@ -39,12 +37,10 @@ export class AlimentacaoPage {
   }
 
   setFilteredItems() {
-    if(!this.searchTerm){
-      console.log('filtrando o vazio')
+    if (!this.searchTerm) {
       this.items = this.result;
     } else {
-      console.log('filtrando resultados');
-      this.items = this.bdService.filterItems(this.items, this.searchTerm);
+      this.items = this.bdService.filterItems(this.result, this.searchTerm);
     }
   }
 
@@ -53,7 +49,6 @@ export class AlimentacaoPage {
       this.items = response;
       this.result = response;
     });
-    console.log('carregando lugares de alimentacao')
   }
 
   viewItem(item){
@@ -66,7 +61,7 @@ export class AlimentacaoPage {
       this.result = response;
 
       if(refresher != 0)
-         refresher.complete();
+        refresher.complete();
     });
   }
 

@@ -11,6 +11,8 @@ import {ComercioItemPage} from './comercio-item/comercio-item';
 export class ComercioPage {
 
   items:any;
+  result:any;
+  searchTerm: string = "";
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private bdService: BdService) {
   }
@@ -18,15 +20,29 @@ export class ComercioPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ComercioPage');
   }
+  
+  ionViewDidEnter() {
+    this.getServicoData();
+    this.setFilteredItems();
+  }
 
   ngOnInit(){
     this.getServicoData();
     console.log('foi...')
   }
 
+  setFilteredItems() {
+    if (!this.searchTerm) {
+      this.items = this.result;
+    } else {
+      this.items = this.bdService.filterItems(this.result, this.searchTerm);
+    }
+  }
+
   getServicoData(){
     this.bdService.getServicoData().subscribe(response => {
       this.items = response['1'];
+      this.result = response['1'];
     });
   }
 
@@ -37,6 +53,7 @@ export class ComercioPage {
   doRefresh(refresher){
     this.bdService.getServicoData().subscribe(response => {
       this.items = response['1'];
+      this.result = response['1'];
 
       if(refresher != 0)
         refresher.complete();
