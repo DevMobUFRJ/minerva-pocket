@@ -11,8 +11,15 @@ import {SecretariaItemPage} from './secretaria-item/secretaria-item';
 export class SecretariaPage {
 
   items:any;
+  result: any;
+  searchTerm: string = "";
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private bdService: BdService) {
+  }
+
+  ionViewDidEnter() {
+    this.getAcademicoData();
+    this.setFilteredItems();
   }
 
   ionViewDidLoad() {
@@ -24,9 +31,18 @@ export class SecretariaPage {
     console.log('foi...')
   }
 
+  setFilteredItems() {
+    if (!this.searchTerm) {
+      this.items = this.result;
+    } else {
+      this.items = this.bdService.filterItemsArray(this.result, this.searchTerm);
+    }
+  }
+
   getAcademicoData(){
     this.bdService.getAcademicoData().subscribe(response => {
       this.items = response['2'];
+      this.result = response['2'];
     });
   }
 
@@ -38,6 +54,7 @@ export class SecretariaPage {
   doRefresh(refresher){
     this.bdService.getAcademicoData().subscribe(response => {
       this.items = response['2'];
+      this.result = response['2'];
 
       if(refresher != 0)
         refresher.complete();
