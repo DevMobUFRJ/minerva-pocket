@@ -53,12 +53,15 @@ import { CopaItemPage } from './../pages/categorias/infraestrutura/copa/copa-ite
 
 import { ContatoPage } from '../pages/contato/contato';
 import { SobrePage } from '../pages/sobre/sobre';
+import { SugestaoPage } from '../pages/sugestao/sugestao';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 
 import { AgmCoreModule } from '@agm/core';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
+
+import { EmailComposer } from '@ionic-native/email-composer';
 
 @NgModule({
   declarations: [
@@ -112,7 +115,8 @@ import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
     CopaItemPage,
 
     ContatoPage,
-    SobrePage
+    SobrePage,
+    SugestaoPage
 
   ],
   imports: [
@@ -175,11 +179,13 @@ import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
     CopaItemPage,
     
     ContatoPage,
-    SobrePage
+    SobrePage,
+    SugestaoPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    EmailComposer, 
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

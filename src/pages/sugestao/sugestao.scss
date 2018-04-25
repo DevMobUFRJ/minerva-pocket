@@ -1,0 +1,29 @@
+page-sugestao {
+    h2 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #2CB893;
+    }
+    p {
+        font-size: 1.6rem;
+        text-align: center;
+        color: grey;
+        margin: 0px 35px;
+    }
+    .formulario {
+        margin: 30px;
+    }
+    div.scroll-content>ion-list>ion-item {
+        padding: 0px;
+    }
+    .btn .label {
+        margin: 0px;
+        height: 100%;
+    }
+    .btn {
+        margin-top: 50px;
+        position: relative;
+        margin-left: 30%;
+    }
+}

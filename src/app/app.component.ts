@@ -55,6 +55,7 @@ import { CopaItemPage } from './../pages/categorias/infraestrutura/copa/copa-ite
 
 import { ContatoPage } from '../pages/contato/contato';
 import { SobrePage } from '../pages/sobre/sobre';
+import { SugestaoPage } from '../pages/sugestao/sugestao';
 
 import { BdService } from './services/bd.service';
 
@@ -83,10 +84,10 @@ export class MyApp {
 
     this.sidepages = [
       { title: 'Contato', icon:"md-mail", component: ContatoPage },
-      { title: 'Sobre', icon: "md-contact", component: SobrePage }
+      { title: 'Sobre', icon: "md-contact", component: SobrePage },
     ];
     this.ideias = [
-      { title: 'Contato', icon:"bulb", component: ContatoPage },
+      { title: 'Sugestao', icon:"bulb", component: SugestaoPage },
     ];
 
     // set our app's pages
