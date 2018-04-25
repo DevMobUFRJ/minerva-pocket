@@ -35,11 +35,17 @@ agm-map {
     font-weight: 500;
 }
 
-.itens, .itens .item-inner{
+.itens {
     border: 0px!important;
-    padding-left: 20px!important;
+    padding-left: 25px!important;
     color: ghostwhite;
     font-weight: 500;
+    margin: 0px!important;
+}
+
+.itens .item-inner {
+    border: 0px!important;
+    margin: 0px!important;
 }
 
 .lista>.item {
@@ -48,6 +54,7 @@ agm-map {
 
 .itens ion-icon {
     margin-right: 8px;
+    font-size: 2.2rem;
 }
 
 .link {

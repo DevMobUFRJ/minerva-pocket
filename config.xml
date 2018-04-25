@@ -3,7 +3,7 @@
     <name>Minerva Pocket</name>
     <description>App de guia da Universidade Federal do Rio de Janeiro</description>
     <author email="devmobufrj@gmail.com" href="http://facebook.com/DevMobUFRJ">DevMob UFRJ</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://192.168.0.107:8100" />
     <access origin="*://*.aqueous-waters-67532.herokuapp.com/*" />
     <access origin="*" />
     <allow-navigation href="http://ionic.local/*" />
