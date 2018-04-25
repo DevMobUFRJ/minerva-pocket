@@ -58,6 +58,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 
 import { AgmCoreModule } from '@agm/core';
+import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 
 @NgModule({
   declarations: [
@@ -120,7 +121,8 @@ import { AgmCoreModule } from '@agm/core';
         apiKey: 'AIzaSyAMYqI8gD4ulLJHXDZpAeUhPZ-NyLfNHEs'
       }),
     BrowserModule,
-    HttpModule
+    HttpModule,
+    AgmSnazzyInfoWindowModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
