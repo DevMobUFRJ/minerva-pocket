@@ -16,17 +16,17 @@
     <ion-list class="formulario">
         <ion-item>
             <ion-label color="minerva" stacked>Nome</ion-label>
-            <ion-input type="text"></ion-input>
+            <ion-input [(ngModel)]="nome" type="text"></ion-input>
         </ion-item>
         <ion-item>
             <ion-label color="minerva" stacked>Email</ion-label>
-            <ion-input type="email"></ion-input>
+            <ion-input [(ngModel)]="from" type="email"></ion-input>
         </ion-item>
         <ion-item>
             <ion-label color="minerva" stacked>Mensagem</ion-label>
-            <ion-textarea rows="6" maxLength="600"></ion-textarea>
+            <ion-textarea [(ngModel)]="mensagem" rows="6" maxLength="600"></ion-textarea>
         </ion-item>
-        <button class="btn" ion-button round outline align-center color="minerva">Enviar</button>
+        <button (click)="send()" class="btn" ion-button round outline align-center color="minerva">Enviar</button>
 
     </ion-list>
 </ion-content>

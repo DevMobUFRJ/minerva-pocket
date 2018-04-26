@@ -13,6 +13,9 @@
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.devmob.minervapocketufrj"
     },
+    "cordova-plugin-email-composer": {
+      "PACKAGE_NAME": "com.devmob.minervapocketufrj"
+    },
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.devmob.minervapocketufrj"
     },
