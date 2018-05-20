@@ -18,13 +18,14 @@ export class SugestaoPage {
     }
     send(){
         console.log("cheguei no send");
+        let corpo_mensagem = 'Olá, \n\nMe chamo ' + this.nome + ' e meu email preferencial para contato é ' + this.from + ' . \n\nTenho a seguinte sugestão para vocês:\n' + this.mensagem
         let email = {
-            to: 'karine.cardozo@gmail.com',
+            to: 'devmob.ufrj@gmail.com',
             cc:[],
             bcc:[],
             attachment:[],
             subject: 'Sugestão - Minerva Pocket',
-            body: this.mensagem,
+            body: corpo_mensagem,
             isHtml: false
         }
         this.emailComposer.open(email);
