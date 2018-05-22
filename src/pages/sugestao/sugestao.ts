@@ -29,5 +29,6 @@ export class SugestaoPage {
             isHtml: false
         }
         this.emailComposer.open(email);
+        this.navCtrl.popToRoot();
     }
 }

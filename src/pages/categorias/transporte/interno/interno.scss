@@ -1,35 +1,30 @@
 page-interno {
-
-  .scroll-content{
-    padding: 0 !important;
-  }
-
-  #back-button{
-    padding:5px 6px 0 6px;
-    margin:0 5px;
-    height:32px;
-    width:34px;
-    font-size:2.4rem;
-  }
-
-  .item-inner {
-    padding-right: 0px!important;
-  }
-
-  .thumbnail {
-    width: 120px !important;
-  }
-
-  ion-thumbnail {
-    margin: 0 !important;
-  }
-
-  ion-item {
-    padding-left: 0px !important;
-  }
-
-  h2 {
-    padding-left: 16px;
-  }
-
+    .scroll-content {
+        padding: 0 !important;
+    }
+    #back-button {
+        padding: 5px 6px 0 6px;
+        margin: 0 5px;
+        height: 32px;
+        width: 34px;
+        font-size: 2.4rem;
+    }
+    .item-inner {
+        padding-right: 0px!important;
+        height: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .thumbnail {
+        width: 120px !important;
+    }
+    ion-thumbnail {
+        margin: 0 !important;
+    }
+    ion-item {
+        padding-left: 0px !important;
+    }
+    h2 {
+        padding-left: 16px;
+    }
 }
